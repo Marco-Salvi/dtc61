@@ -7,141 +7,105 @@ requirements:
   SubworkflowFeatureRequirement: {}
 
 inputs:
-  DT5210: Directory
+  DT6002: Directory
+  DT6003: Directory
+  DT6004: Directory
+  DT6005: Directory
+  DT6009: Directory
 
 outputs:
-  DT5202:
+  DT6006:
     type: Directory
-    outputSource: ST520104/DT5202
-  DT5203:
+    outputSource: ST610105/DT6006
+  DT6007:
     type: Directory
-    outputSource: ST520105/DT5203
-  DT5204:
+    outputSource: ST610105/DT6007
+  DT6008:
     type: Directory
-    outputSource: ST520106/DT5204
-  DT5205:
+    outputSource: todo
+  DT6010:
     type: Directory
-    outputSource: ST520109/DT5205
-  DT5206:
+    outputSource: todo
+  DT6011:
     type: Directory
-    outputSource: ST520110/DT5206
-  DT5207:
+    outputSource: todo
+  DT6012:
     type: Directory
-    outputSource: ST520111/DT5207
-  DT5208:
+    outputSource: todo
+  DT6013:
     type: Directory
-    outputSource: ST520114/DT5208
-  DT5209:
-    type: Directory
-    outputSource: ST520116/DT5209
+    outputSource: todo
 
 steps:
-  ST520101:
+  ST610101:
     in:
-      DT5202: ST520104/DT5202
-      DT5203: ST520105/DT5203
-      DT5204: ST520106/DT5204
-      DT5205: ST520109/DT5205
-      DT5206: ST520110/DT5206
-      DT5207: ST520111/DT5207
-      DT5210: DT5210
-    run: ST520101.cwl
-    out: []
-  ST520102:
-    in:
-      DT5209: ST520116/DT5209
-    run: ST520102.cwl
-    out: []
-  ST520103:
-    in:
-      DT5210: DT5210
-    run: ST520103.cwl
-    out: []
-  ST520104:
-    in:
-      DT5210: DT5210
-    run: ST520104.cwl
+      DT6003: DT6003
+      DT6004: DT6004
+      DT6005: DT6005
+    run: ST610101.cwl
     out:
-    - DT5202
-  ST520105:
+    - DT6101
+  ST610102:
     in:
-      DT5210: DT5210
-    run: ST520105.cwl
+      DT6001: DT6001
+    run: ST610102.cwl
     out:
-    - DT5203
-  ST520106:
+    - event_file
+  ST610103:
     in:
-      DT5210: DT5210
-    run: ST520106.cwl
+      DT6001: DT6001
+    run: ST610103.cwl
     out:
-    - DT5204
-  ST520107:
+    - sea_level_data
+  ST610104:
     in:
-      DT5210: DT5210
-    run: ST520107.cwl
-    out: []
-  ST520108:
-    in:
-      DT5210: DT5210
-    run: ST520108.cwl
-    out: []
-  ST520109:
-    in:
-      DT5210: DT5210
-    run: ST520109.cwl
+      DT6001: DT6001
+    run: ST610104.cwl
     out:
-    - DT5205
-  ST520110:
+    - gnss_data
+  ST610105:
     in:
-      DT5210: DT5210
-    run: ST520110.cwl
+      DT6002: DT6002
+      event_file: ST610102/event_file
+      fault_model: ST610111/fault_model
+      misfit_data: ST610107/misfit_output
+    run: ST610105.cwl
     out:
-    - DT5206
-  ST520111:
+    - DT6006
+    - DT6007
+  ST610106:
     in:
-      DT5210: DT5210
-    run: ST520111.cwl
+      DT6002: DT6002
+      DT6006: ST610105/DT6006
+      DT6008: DT6008
+      DT6009: DT6009
+    run: ST610106.cwl
     out:
-    - DT5207
-  ST520112:
+    - DT6010
+    - DT6011
+  ST610107:
     in:
-      DT5205: ST520109/DT5205
-      DT5206: ST520110/DT5206
-      DT5207: ST520111/DT5207
-    run: ST520112.cwl
-    out: []
-  ST520113:
-    in:
-      DT5202: ST520104/DT5202
-      DT5203: ST520105/DT5203
-      DT5205: ST520109/DT5205
-      DT5206: ST520110/DT5206
-      DT5207: ST520111/DT5207
-      DT5210: DT5210
-      DT5211: DT5210
-    run: ST520113.cwl
-    out: []
-  ST520114:
-    in:
-      DT5204: ST520106/DT5204
-      DT5210: DT5210
-    run: ST520114.cwl
+      DT6010: ST610106/DT6010
+      DT6011: ST610106/DT6011
+      gnss_data: ST610104/gnss_data
+      sea_level_data: ST610103/sea_level_data
+    run: ST610107.cwl
     out:
-    - DT5208
-  ST520115:
+    - misfit_output
+  ST610108:
     in:
-      DT5208: ST520114/DT5208
-      DT5210: DT5210
-    run: ST520115.cwl
+      DT6007: ST610105/DT6007
+      DT6010: ST610106/DT6010
+	  misfit_output: ST610107/misfit_output
+    run: ST610108.cwl
     out:
-    - DT5209
-  ST520116:
-    in:
-      DT5208: ST520114/DT5208
-    run: ST520116.cwl
-    out:
-    - DT5209
-  ST520117:
-    in: {}
-    run: ST520117.cwl
-    out: []
+    - DT6012
+  ST610109:
+	in:
+		DT6012: ST610108/DT6012
+		DT6013: 
+
+
+
+
+

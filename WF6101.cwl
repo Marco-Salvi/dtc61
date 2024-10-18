@@ -37,12 +37,6 @@ outputs:
     outputSource: ST610109/DT6013
 
 steps:
-  ST310111:
-    in:
-      gnss_data: ST610104/gnss_data
-    run: ST610111.cwl
-    out:
-    - fault_model
   ST610101:
     in:
       DT6003: DT6003
@@ -79,8 +73,7 @@ steps:
     out:
     - DT6006
     - DT6007
-  ST610106
-  :
+  ST610106:
     in:
       DT6002: DT6002
       DT6006: ST610105/DT6006
@@ -120,3 +113,9 @@ steps:
     run: ST610110.cwl
     out:
     - DT6008
+  ST610111:
+    in:
+      gnss_data: ST610104/gnss_data
+    run: ST610111.cwl
+    out:
+    - fault_model

@@ -10,11 +10,15 @@ inputs:
   DT6009: Directory
 
 outputs:
-  DT6010: Directory
-  DT6011: Directory
+  DT6010: 
+    type: Directory
+    outputSource: SS6106/DT6010
+  DT6011: 
+    type: Directory
+    outputSource: SS6106/DT6011
 
 steps:
-  doc: SeisSol
+#  doc: SeisSol
   SS6106:
     in:
       DT6002: DT6002

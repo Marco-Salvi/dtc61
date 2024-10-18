@@ -7,6 +7,7 @@ requirements:
   SubworkflowFeatureRequirement: {}
 
 inputs:
+  DT6001: Directory
   DT6002: Directory
   DT6003: Directory
   DT6004: Directory
@@ -38,38 +39,74 @@ outputs:
 
 steps:
   ST610101:
+    doc: SS6101
     in:
       DT6003: DT6003
       DT6004: DT6004
       DT6005: DT6005
-    run: ST610101.cwl
+    run:
+      class: Operation
+      inputs:
+        DT6003: Directory
+        DT6004: Directory
+        DT6005: Directory
+      outputs:
+        DT6101: Directory
     out:
     - DT6101
   ST610102:
+    doc: SS6102
     in:
       DT6001: DT6001
-    run: ST610102.cwl
+    run:
+      class: Operation
+      inputs:
+        DT6001: Directory
+      outputs:
+        event_file: File
     out:
     - event_file
   ST610103:
+    doc: SS6103
     in:
       DT6001: DT6001
-    run: ST610103.cwl
+    run:
+      class: Operation
+      inputs:
+        DT6001: Directory
+      outputs:
+        sea_level_data: Directory
     out:
     - sea_level_data
   ST610104:
+    doc: SS6104
     in:
       DT6001: DT6001
-    run: ST610104.cwl
+    run:
+      class: Operation
+      inputs:
+        DT6001: Directory
+      outputs:
+        gnss_data: Directory
     out:
     - gnss_data
   ST610105:
+    doc: SS6105
     in:
       DT6002: DT6002
       event_file: ST610102/event_file
       fault_model: ST610111/fault_model
       misfit_data: ST610107/misfit_output
-    run: ST610105.cwl
+    run:
+      class: Operation
+      inputs:
+        DT6002: Directory
+        event_file: File
+        fault_model: Directory
+        misfit_data: Directory
+      outputs:
+        DT6006: Directory
+        DT6007: Directory
     out:
     - DT6006
     - DT6007
@@ -84,20 +121,37 @@ steps:
     - DT6010
     - DT6011
   ST610107:
+    doc: SS6113
     in:
       DT6010: ST610106/DT6010
       DT6011: ST610106/DT6011
       gnss_data: ST610104/gnss_data
       sea_level_data: ST610103/sea_level_data
-    run: ST610107.cwl
+    run:
+      class: Operation
+      inputs:
+        DT6010: Directory
+        DT6011: Directory
+        gnss_data: Directory
+        sea_level_data: Directory
+      outputs:
+        misfit_output: Directory
     out:
     - misfit_output
   ST610108:
+    doc: SS6114
     in:
       DT6007: ST610105/DT6007
       DT6010: ST610106/DT6010
       misfit_output: ST610107/misfit_output
-    run: ST610108.cwl
+    run:
+      class: Operation
+      inputs:
+        DT6007: Directory
+        DT6010: Directory
+        misfit_output: Directory
+      outputs:
+        DT6012: Directory
     out:
     - DT6012
   ST610109:
@@ -107,15 +161,28 @@ steps:
     out:
     - DT6013
   ST610110:
+    doc: SS6117
     in:
       fault_model: ST610111/fault_model
       misfit_output: ST610107/misfit_output
-    run: ST610110.cwl
+    run:
+      class: Operation
+      inputs:
+        fault_model: Directory
+        misfit_output: Directory?
+      outputs:
+        DT6008: Directory
     out:
     - DT6008
   ST610111:
+    doc: SS6118
     in:
       gnss_data: ST610104/gnss_data
-    run: ST610111.cwl
+    run:
+      class: Operation
+      inputs:
+        gnss_data: Directory
+      outputs:
+        fault_model: Directory
     out:
     - fault_model

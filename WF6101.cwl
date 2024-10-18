@@ -22,21 +22,27 @@ outputs:
     outputSource: ST610105/DT6007
   DT6008:
     type: Directory
-    outputSource: todo
+    outputSource: ST610110/DT6008
   DT6010:
     type: Directory
-    outputSource: todo
+    outputSource: ST610106/DT6010
   DT6011:
     type: Directory
-    outputSource: todo
+    outputSource: ST610106/DT6011
   DT6012:
     type: Directory
-    outputSource: todo
+    outputSource: ST610108/DT6012
   DT6013:
     type: Directory
-    outputSource: todo
+    outputSource: ST610109/DT6013
 
 steps:
+  ST310111:
+    in:
+      gnss_data: ST610104/gnss_data
+    run: ST610111.cwl
+    out:
+    - fault_model
   ST610101:
     in:
       DT6003: DT6003
@@ -73,11 +79,12 @@ steps:
     out:
     - DT6006
     - DT6007
-  ST610106:
+  ST610106
+  :
     in:
       DT6002: DT6002
       DT6006: ST610105/DT6006
-      DT6008: DT6008
+      DT6008: ST610110/DT6008
       DT6009: DT6009
     run: ST610106.cwl
     out:
@@ -96,16 +103,20 @@ steps:
     in:
       DT6007: ST610105/DT6007
       DT6010: ST610106/DT6010
-	  misfit_output: ST610107/misfit_output
+      misfit_output: ST610107/misfit_output
     run: ST610108.cwl
     out:
     - DT6012
   ST610109:
-	in:
-		DT6012: ST610108/DT6012
-		DT6013: 
-
-
-
-
-
+    in:
+      DT6012: ST610108/DT6012
+    run: ST610109.cwl
+    out:
+    - DT6013
+  ST610110:
+    in:
+      fault_model: ST610111/fault_model
+      misfit_output: ST610107/misfit_output
+    run: ST610110.cwl
+    out:
+    - DT6008

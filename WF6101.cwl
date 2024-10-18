@@ -96,14 +96,12 @@ steps:
       DT6002: DT6002
       event_file: ST610102/event_file
       fault_model: ST610111/fault_model
-      misfit_data: ST610107/misfit_output
     run:
       class: Operation
       inputs:
         DT6002: Directory
         event_file: File
         fault_model: Directory
-        misfit_data: Directory
       outputs:
         DT6006: Directory
         DT6007: Directory
@@ -164,12 +162,10 @@ steps:
     doc: SS6117
     in:
       fault_model: ST610111/fault_model
-      misfit_output: ST610107/misfit_output
     run:
       class: Operation
       inputs:
         fault_model: Directory
-        misfit_output: Directory?
       outputs:
         DT6008: Directory
     out:

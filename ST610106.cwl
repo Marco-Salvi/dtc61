@@ -123,6 +123,7 @@ steps:
       outputs:
         deformation: Directory
         tbd: Directory
+        tbd_2: Directory
     out:
     - deformation
     - tbd

@@ -5,6 +5,7 @@ class: Workflow
 
 inputs:
   DT6002:
+    doc: NEAMTHM18
     type: Directory
   DT6006:
     type: Directory

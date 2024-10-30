@@ -17,113 +17,6 @@
       }
     },
     {
-      "@id": "./",
-      "@type": "Dataset",
-      "name": "TODO",
-      "description": "TODO",
-      "license": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "conformsTo": [
-        {
-          "@id": "https://w3id.org/ro/wfrun/process/0.4"
-        },
-        {
-          "@id": "https://w3id.org/ro/wfrun/workflow/0.4"
-        },
-        {
-          "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
-        }
-      ],
-      "hasPart": [
-        {
-          "@id": "WF5201.cwl"
-        },
-        {
-          "@id": "DT5202"
-        },
-        {
-          "@id": "DT5203"
-        },
-        {
-          "@id": "DT5204"
-        },
-        {
-          "@id": "DT5205"
-        },
-        {
-          "@id": "DT5206"
-        },
-        {
-          "@id": "DT5207"
-        },
-        {
-          "@id": "DT5208"
-        },
-        {
-          "@id": "DT5209"
-        },
-        {
-          "@id": "DT5210"
-        },
-        {
-          "@id": "ST520101.cwl"
-        },
-        {
-          "@id": "ST520102.cwl"
-        },
-        {
-          "@id": "ST520103.cwl"
-        },
-        {
-          "@id": "ST520104.cwl"
-        },
-        {
-          "@id": "ST520105.cwl"
-        },
-        {
-          "@id": "ST520106.cwl"
-        },
-        {
-          "@id": "ST520107.cwl"
-        },
-        {
-          "@id": "ST520108.cwl"
-        },
-        {
-          "@id": "ST520109.cwl"
-        },
-        {
-          "@id": "ST520110.cwl"
-        },
-        {
-          "@id": "ST520111.cwl"
-        },
-        {
-          "@id": "ST520112.cwl"
-        },
-        {
-          "@id": "ST520113.cwl"
-        },
-        {
-          "@id": "ST520114.cwl"
-        },
-        {
-          "@id": "ST520115.cwl"
-        },
-        {
-          "@id": "ST520116.cwl"
-        },
-        {
-          "@id": "ST520117.cwl"
-        }
-      ],
-      "mainEntity": {
-        "@id": "WF5201.cwl"
-      }
-    },
-    {
       "@id": "https://w3id.org/ro/wfrun/process/0.4",
       "@type": "CreativeWork",
       "name": "Process Run Crate",
@@ -142,13 +35,487 @@
       "version": "1.0"
     },
     {
-      "@id": "WF5201.cwl",
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+      "@type": "ComputerLanguage",
+      "identifier": "https://www.commonwl.org/",
+      "name": "Common Workflow Language",
+      "url": "https://www.commonwl.org/"
+    },
+    {
+      "@id": "0000-0002-7822-0244",
+      "@type": "Person",
+      "name": "Steven Gibbons",
+      "affiliation": {
+        "@id": "NGI"
+      }
+    },
+    {
+      "@id": "0000-0003-0112-8412",
+      "@type": "Person",
+      "name": "Alice-Agnes Gabriel",
+      "affiliation": {
+        "@id": "TUM"
+      }
+    },
+    {
+      "@id": "0000-0001-9836-8716",
+      "@type": "Person",
+      "name": "Jörn Behrens",
+      "affiliation": {
+        "@id": "UH"
+      }
+    },
+    {
+      "@id": "0000-0002-3010-8050",
+      "@type": "Person",
+      "name": "Jorge Macias",
+      "affiliation": {
+        "@id": "UMA"
+      }
+    },
+    {
+      "@id": "0000-0003-1019-7321",
+      "@type": "Person",
+      "name": "Finn Løvholt",
+      "affiliation": {
+        "@id": "NGI"
+      }
+    },
+    {
+      "@id": "0000-0003-4551-3339",
+      "@type": "Person",
+      "name": "Manuela Volpe",
+      "affiliation": {
+        "@id": "INGV"
+      }
+    },
+    {
+      "@id": "TUM",
+      "@type": "Organization",
+      "name": "Technical University of Munich"
+    },
+    {
+      "@id": "NGI",
+      "@type": "Organization",
+      "name": "Norwegian Geotechnical Institute"
+    },
+    {
+      "@id": "UH",
+      "@type": "Organization",
+      "name": "Universität Hamburg"
+    },
+    {
+      "@id": "INGV",
+      "@type": "Organization",
+      "name": "Istituto Nazionale di Geofisica e Vulcanologia (INGV)"
+    },
+    {
+      "@id": "UMA",
+      "@type": "Organization",
+      "name": "Universidad de Málaga (UMA)"
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Probabilistic Tsunami Forecasting",
+      "description": "Workflow aiming at computing the probability of exceedance of given tsunami intensities at given locations, conditional upon an occurring tsunamigenic event. Presently made by a master python code managing the execution of different steps + a suite of python codes for each step + a few bash scripts for job submission to HPC resources. Other softwares described as separate DA are also to be considered part of the workflow.",
+      "license": "Open for non-cemmercial use. Type of license to be decided",
+      "author": [
+        {
+          "@id": "0000-0003-4551-3339"
+        },
+        {
+          "@id": "0000-0002-3010-8050"
+        }
+      ],
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/wfrun/process/0.4"
+        },
+        {
+          "@id": "https://w3id.org/ro/wfrun/workflow/0.4"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "WF6101.cwl"
+        },
+        {
+          "@id": "DT6003"
+        },
+        {
+          "@id": "DT6013"
+        },
+        {
+          "@id": "DT6006"
+        },
+        {
+          "@id": "DT6101"
+        },
+        {
+          "@id": "DT6008"
+        },
+        {
+          "@id": "DT6010"
+        },
+        {
+          "@id": "sea_level_data"
+        },
+        {
+          "@id": "gnss_data"
+        },
+        {
+          "@id": "DT6001"
+        },
+        {
+          "@id": "DT6002"
+        },
+        {
+          "@id": "DT6011"
+        },
+        {
+          "@id": "DT6007"
+        },
+        {
+          "@id": "DT6004"
+        },
+        {
+          "@id": "DT6005"
+        },
+        {
+          "@id": "DT6009"
+        },
+        {
+          "@id": "DT6012"
+        },
+        {
+          "@id": "event_file"
+        },
+        {
+          "@id": "fault_model"
+        },
+        {
+          "@id": "misfit_output"
+        },
+        {
+          "@id": "SS6101"
+        },
+        {
+          "@id": "SS6103"
+        },
+        {
+          "@id": "SS6105"
+        },
+        {
+          "@id": "SS6114"
+        },
+        {
+          "@id": "SS6117"
+        },
+        {
+          "@id": "ST610109.cwl"
+        },
+        {
+          "@id": "SS6102"
+        },
+        {
+          "@id": "SS6104"
+        },
+        {
+          "@id": "SS6113"
+        },
+        {
+          "@id": "SS6118"
+        },
+        {
+          "@id": "ST610106.cwl"
+        }
+      ],
+      "mainEntity": {
+        "@id": "WF6101.cwl"
+      }
+    },
+    {
+      "@id": "WF6101.cwl",
       "@type": [
         "File",
         "SoftwareSourceCode",
         "ComputationalWorkflow"
       ],
-      "name": "TODO",
+      "name": "Probabilistic Tsunami Forecasting",
+      "author": [
+        {
+          "@id": "0000-0003-4551-3339"
+        },
+        {
+          "@id": "0000-0002-3010-8050"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "0000-0003-4551-3339"
+        },
+        {
+          "@id": "0000-0002-3010-8050"
+        }
+      ],
+      "programmingLanguage": {
+        "@id": "https://about.workflowhub.eu/Workflow-RO-Crate/#cwl"
+      },
+      "input": [
+        {
+          "@id": "#DT6003->WF6101.cwl"
+        },
+        {
+          "@id": "#DT6004->WF6101.cwl"
+        },
+        {
+          "@id": "#DT6005->WF6101.cwl"
+        },
+        {
+          "@id": "#DT6009->WF6101.cwl"
+        },
+        {
+          "@id": "#DT6001->WF6101.cwl"
+        },
+        {
+          "@id": "#DT6002->WF6101.cwl"
+        }
+      ],
+      "output": [
+        {
+          "@id": "#WF6101.cwl->DT6012"
+        },
+        {
+          "@id": "#WF6101.cwl->DT6013"
+        },
+        {
+          "@id": "#WF6101.cwl->DT6006"
+        },
+        {
+          "@id": "#WF6101.cwl->DT6007"
+        },
+        {
+          "@id": "#WF6101.cwl->DT6008"
+        },
+        {
+          "@id": "#WF6101.cwl->DT6010"
+        },
+        {
+          "@id": "#WF6101.cwl->DT6011"
+        }
+      ]
+    },
+    {
+      "@id": "#DT6003->WF6101.cwl",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6003"
+      },
+      "name": "DT6003",
+      "valueRequired": true
+    },
+    {
+      "@id": "#DT6004->WF6101.cwl",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6004"
+      },
+      "name": "DT6004",
+      "valueRequired": true
+    },
+    {
+      "@id": "#DT6005->WF6101.cwl",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6005"
+      },
+      "name": "DT6005",
+      "valueRequired": true
+    },
+    {
+      "@id": "#DT6009->WF6101.cwl",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6009"
+      },
+      "name": "DT6009",
+      "valueRequired": true
+    },
+    {
+      "@id": "#DT6001->WF6101.cwl",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6001"
+      },
+      "name": "DT6001",
+      "valueRequired": true
+    },
+    {
+      "@id": "#DT6002->WF6101.cwl",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6002"
+      },
+      "name": "DT6002",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6011",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6011"
+      },
+      "name": "DT6011",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6012",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6012"
+      },
+      "name": "DT6012",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6013",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6013"
+      },
+      "name": "DT6013",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6006",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6006"
+      },
+      "name": "DT6006",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6007",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6007"
+      },
+      "name": "DT6007",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6008",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6008"
+      },
+      "name": "DT6008",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6010",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "TODO",
+      "workExample": {
+        "@id": "DT6010"
+      },
+      "name": "DT6010",
+      "valueRequired": true
+    },
+    {
+      "@id": "SS6117",
+      "@type": "SoftwareSourceCode",
+      "name": "Landslide scenario manager",
+      "description": "Will combine shakemaps, slope, and soil information (if available) to compute a set of initial landslides volumes and associated conditional probabilities as input to the landslide source models.",
+      "author": [
+        {
+          "@id": "0000-0003-1019-7321"
+        },
+        {
+          "@id": "0000-0001-5581-2346"
+        }
+      ],
+      "license": "CC-BY 4.0",
+      "programmingLanguage": "Python",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "ST610109.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "name": "AL and Visualization",
       "author": {
         "@id": "TODO"
       },
@@ -160,38 +527,17 @@
       },
       "input": [
         {
-          "@id": "#DT5210-param"
+          "@id": "#DT6012->ST610109.cwl"
         }
       ],
       "output": [
         {
-          "@id": "#DT5207-param"
-        },
-        {
-          "@id": "#DT5208-param"
-        },
-        {
-          "@id": "#DT5209-param"
-        },
-        {
-          "@id": "#DT5202-param"
-        },
-        {
-          "@id": "#DT5203-param"
-        },
-        {
-          "@id": "#DT5204-param"
-        },
-        {
-          "@id": "#DT5205-param"
-        },
-        {
-          "@id": "#DT5206-param"
+          "@id": "#ST610109.cwl->DT6013"
         }
       ]
     },
     {
-      "@id": "#DT5210-param",
+      "@id": "#DT6012->ST610109.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -199,13 +545,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT5210"
+        "@id": "DT6012"
       },
-      "name": "TODO",
+      "name": "DT6012",
       "valueRequired": true
     },
     {
-      "@id": "#DT5207-param",
+      "@id": "#ST610109.cwl->DT6013",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -213,13 +559,118 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT5207"
+        "@id": "DT6013"
       },
-      "name": "TODO",
+      "name": "DT6013",
       "valueRequired": true
     },
     {
-      "@id": "#DT5208-param",
+      "@id": "SS6116",
+      "@type": "SoftwareSourceCode",
+      "name": "Visualization",
+      "description": "TODO",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6115",
+      "@type": "SoftwareSourceCode",
+      "name": "AL conversion",
+      "description": "Conversion of hazard into Alert Levels, provided that conversion rules are given",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "alert_levels",
+      "@type": "Dataset",
+      "name": "TODO",
+      "url": "TODO"
+    },
+    {
+      "@id": "DT6012",
+      "@type": "Dataset",
+      "name": "Hazard curves",
+      "url": "TODO"
+    },
+    {
+      "@id": "DT6013",
+      "@type": "Dataset",
+      "name": "Hazard visual products",
+      "url": "TODO"
+    },
+    {
+      "@id": "SS6101",
+      "@type": "SoftwareSourceCode",
+      "name": "ScPlayer: Scenario Player",
+      "description": "Simulates real-time processing by sending to the workflow pre-stored sensor data packets from the scenario library database. Each data packet will be sent at a corresponding scenario model time to simulate the real-time hazard event occurrence and processing (under development)",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6103",
+      "@type": "SoftwareSourceCode",
+      "name": "ListenerSL",
+      "description": "Listens for new sea level data packet(s) and conveys it/them to the MisfitEvaluator #b07#. Optional processing/conversion of data ( (under discussion: to be compliant with the operational version in the monitoring room)",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6105",
+      "@type": "SoftwareSourceCode",
+      "name": "EnsembleManager",
+      "description": "Generates the list of earthquake scenarios (and associated probabilities) from incoming seismic parameters and long-term information; then updates the list based on further incoming sensor data level, GNSS) and possibly the misfit metrics derived by(seismic, sea level, GNSS) and possibly the misfit metrics derived by block #b07#.",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6114",
+      "@type": "SoftwareSourceCode",
+      "name": "Hazard Aggregator",
+      "description": "Aggregates hazard by using tsunami intensities from Scenario Modelling #b06# and scenario probabilities from Ensemble Manager #b05#. Scenario probabilities can be further updated based on the misfits from the Misfit Evaluator #b07#.",
+      "author": {
+        "@id": "0000-0003-4551-3339"
+      },
+      "license": "CC-BY 4.0",
+      "programmingLanguage": "Python",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "ST610106.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "name": "Scenario Modeling",
+      "author": {
+        "@id": "TODO"
+      },
+      "creator": {
+        "@id": "TODO"
+      },
+      "programmingLanguage": {
+        "@id": "https://about.workflowhub.eu/Workflow-RO-Crate/#cwl"
+      },
+      "input": [
+        {
+          "@id": "#DT6009->ST610106.cwl"
+        },
+        {
+          "@id": "#DT6002->ST610106.cwl"
+        },
+        {
+          "@id": "#DT6006->ST610106.cwl"
+        },
+        {
+          "@id": "#DT6008->ST610106.cwl"
+        }
+      ],
+      "output": [
+        {
+          "@id": "#ST610106.cwl->DT6010"
+        },
+        {
+          "@id": "#ST610106.cwl->DT6011"
+        }
+      ]
+    },
+    {
+      "@id": "#DT6009->ST610106.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -227,13 +678,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT5208"
+        "@id": "DT6009"
       },
-      "name": "TODO",
+      "name": "DT6009",
       "valueRequired": true
     },
     {
-      "@id": "#DT5209-param",
+      "@id": "#DT6002->ST610106.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -241,13 +692,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT5209"
+        "@id": "DT6002"
       },
-      "name": "TODO",
+      "name": "DT6002",
       "valueRequired": true
     },
     {
-      "@id": "#DT5202-param",
+      "@id": "#DT6006->ST610106.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -255,13 +706,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT5202"
+        "@id": "DT6006"
       },
-      "name": "TODO",
+      "name": "DT6006",
       "valueRequired": true
     },
     {
-      "@id": "#DT5203-param",
+      "@id": "#DT6008->ST610106.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -269,13 +720,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT5203"
+        "@id": "DT6008"
       },
-      "name": "TODO",
+      "name": "DT6008",
       "valueRequired": true
     },
     {
-      "@id": "#DT5204-param",
+      "@id": "#ST610106.cwl->DT6011",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -283,13 +734,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT5204"
+        "@id": "DT6011"
       },
-      "name": "TODO",
+      "name": "DT6011",
       "valueRequired": true
     },
     {
-      "@id": "#DT5205-param",
+      "@id": "#ST610106.cwl->DT6010",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -297,280 +748,254 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT5205"
+        "@id": "DT6010"
       },
-      "name": "TODO",
+      "name": "DT6010",
       "valueRequired": true
     },
     {
-      "@id": "#DT5206-param",
-      "@type": "FormalParameter",
-      "additionalType": "Dataset",
-      "conformsTo": {
-        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      "@id": "SS6112",
+      "@type": "SoftwareSourceCode",
+      "name": "Source-to-wave filter",
+      "description": "Time dependent source to wave model filter WGS84, variable coordinates",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6113",
+      "@type": "SoftwareSourceCode",
+      "name": "Misfit Evaluator",
+      "description": "TODO",
+      "author": {
+        "@id": "0000-0001-9836-8716"
       },
-      "description": "TODO",
-      "workExample": {
-        "@id": "DT5206"
+      "license": "TBD (probably GPL-3.0-or-later)",
+      "programmingLanguage": "Python",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6106",
+      "@type": "SoftwareSourceCode",
+      "name": "SeisSol",
+      "description": "Tool simulating earthquake dynamic rupture, off-fault deformation, seismic, acoustic wave propagation and tsunami generation in a 3D domain. It can be used to understand the physics of earthquake and tsunami interaction. SeisSol is a high-performance computational seismology software that focuses on the simulation of complex earthquake scenarios. It supports various rheologies (elastic, anisotropic-elastic, acoustic, viscoelastic, poroelastic), boundary conditions and dynamic rupture laws. SeisSol uses high-order discontinuous Galerkin discretisation with an Arbitrary DERivative (ADER) local time stepping on unstructured adaptive tetrahedral meshes. Works with Cartesian coordinate systems.",
+      "author": {
+        "@id": "0000-0003-0112-8412"
       },
-      "name": "TODO",
-      "valueRequired": true
+      "license": "BSD-3-Clause",
+      "programmingLanguage": [
+        "C++",
+        "Python",
+        "Matlab"
+      ],
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
-      "@type": "ComputerLanguage",
-      "identifier": "https://www.commonwl.org/",
-      "name": "Common Workflow Language",
-      "url": "https://www.commonwl.org/"
+      "@id": "SS6107",
+      "@type": "SoftwareSourceCode",
+      "name": "Tsunami-HySEA",
+      "description": "GPU accelerated software for simulating seismic-triggered tsunamis. Tool towards simulating the wave propagation and resulting inundation. It includes bottom bathymetry deformation from the earthquake rupture using the Okada model and others initial conditions. CRS is geographic WGS84. Coordinate values are decimal degrees.",
+      "author": {
+        "@id": "0000-0002-3010-8050"
+      },
+      "license": "CC-BY-NC-ND-4.0",
+      "programmingLanguage": [
+        "C++",
+        "CUDA",
+        "OpenMPI"
+      ],
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "ST520101",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
+      "@id": "SS6108",
+      "@type": "SoftwareSourceCode",
+      "name": "Landslide-HySea",
+      "description": "GPU accelerated software for simulating landslide-triggered tsunamis. Tool towards  simulating the interaction between a granular material layer and a water layer via a coupled model. CRS is UTM. Coordinate values are metres",
+      "author": {
+        "@id": "0000-0002-3010-8050"
+      },
+      "license": "CC-BY-NC-ND-4.0",
+      "programmingLanguage": [
+        "C++",
+        "CUDA",
+        "OpenMPI"
+      ],
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "ST520102",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
+      "@id": "SS6109",
+      "@type": "SoftwareSourceCode",
+      "name": "BingClaw",
+      "description": "Tool for simulating submarine landslide dynamics for cohesive (clay dominated) landslides, both as a tool towards simulating the landslide dynamics and its run-out distance, but also for generating tsunamis. The code has been operational in 6-7 years for running at laptops of the developer. Presently a docker container is being developed and tested, both for standard Docker and Udocker. Github account exists and model is offered as service within GeoINQUIRE. Both cartesian and geographical coordinates (spherical) possible",
+      "author": {
+        "@id": [
+          {
+            "@id": "0000-0003-1019-7321"
+          },
+          {
+            "@id": "0000-0002-7822-0244"
+          }
+        ]
+      },
+      "license": "CC-BY-NC-ND-4.0",
+      "programmingLanguage": [
+        "Fortran",
+        "Python"
+      ],
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "ST520103",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
+      "@id": "SS6110",
+      "@type": "SoftwareSourceCode",
+      "name": "SHALTOP",
+      "description": "SHALTOP describes granular flows over complex topography based on thin-layer depth-averaged equations solved using finite volume  methods. Horizontal/vertical coordinate system but thin-layer approximation based on topography related coordinate system. As a result, the thickness of the initial released mass should be described in the direction perpendicular to the topography in each point.",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "ST520104",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
+      "@id": "SS6111",
+      "@type": "SoftwareSourceCode",
+      "name": "InundationAI",
+      "description": "Estimates tsunami intensities source parameters or time-series simulation output using trained NN/deep learning models trained on previously performed simulations. Both cartesian and geographical coordinates (spherical) possible",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "ST520105",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
+      "@id": "DT6002",
+      "@type": "Dataset",
+      "name": "NEAMTHM18",
+      "url": "TODO"
     },
     {
-      "@id": "ST520106",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
+      "@id": "DT6006",
+      "@type": "Dataset",
+      "name": "List of scenarios (indices) with parameters",
+      "url": "TODO"
     },
     {
-      "@id": "ST520107",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
+      "@id": "DT6010",
+      "@type": "Dataset",
+      "name": "Tsunami intensity",
+      "url": "TODO"
     },
     {
-      "@id": "ST520108",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520109",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520110",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520111",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520112",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520113",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520114",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520115",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520116",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "ST520117",
-      "@type": "SoftwareApplication",
-      "name": "TODO",
-      "description": "TODO",
-      "softwareVersion": "TODO"
-    },
-    {
-      "@id": "DT5202",
+      "@id": "deformation",
       "@type": "Dataset",
       "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5202-param"
-      }
+      "url": "TODO"
     },
     {
-      "@id": "DT5203",
+      "@id": "tbd",
       "@type": "Dataset",
       "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5203-param"
-      }
+      "url": "TODO"
     },
     {
-      "@id": "DT5204",
+      "@id": "DT6008",
+      "@type": "Dataset",
+      "name": "List of landslade scenarios",
+      "url": "TODO"
+    },
+    {
+      "@id": "DT6009",
+      "@type": "Dataset",
+      "name": "SimGrids",
+      "url": "TODO"
+    },
+    {
+      "@id": "DT6011",
+      "@type": "Dataset",
+      "name": "Ground displacements at selected POIs",
+      "url": "TODO"
+    },
+    {
+      "@id": "tbd_2",
       "@type": "Dataset",
       "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5204-param"
-      }
+      "url": "TODO"
     },
     {
-      "@id": "DT5205",
+      "@id": "SS6102",
+      "@type": "SoftwareSourceCode",
+      "name": "ListenerEQ",
+      "description": "Listens for new EQ parameter message and conveys it to the EnsembleManager #b05#. Optional processing/conversion of data (under discussion: to be compliant with the operational version in the monitoring room)",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6104",
+      "@type": "SoftwareSourceCode",
+      "name": "ListenerGNSS",
+      "description": "Listens for new data packet(s) from GNSS processing system and conveys it/them to the EnsembleManager #b05# and to the MisfitEvaluator #b07#.  (under discussion: to be compliant with bthe operational version in the monitoring room)",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6118",
+      "@type": "SoftwareSourceCode",
+      "name": "Earthquake modeling",
+      "description": "This block is considered as an alternative or accompaniment to WP7 in providing advanced source parameters to DTC-T1. E.g., shakemaps for landslide simulations. (to be developed, under discussion)",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "DT6003",
+      "@type": "Dataset",
+      "name": "EIDA seismic data archive (European Integrated Data Archive)",
+      "url": "TODO"
+    },
+    {
+      "@id": "DT6101",
+      "@type": "Dataset",
+      "name": "TODO: what is this dataset?",
+      "url": "TODO"
+    },
+    {
+      "@id": "sea_level_data",
       "@type": "Dataset",
       "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5205-param"
-      }
+      "url": "TODO"
     },
     {
-      "@id": "DT5206",
+      "@id": "gnss_data",
       "@type": "Dataset",
       "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5206-param"
-      }
+      "url": "TODO"
     },
     {
-      "@id": "DT5207",
+      "@id": "DT6001",
+      "@type": "Dataset",
+      "name": "Scenario Library",
+      "url": "TODO"
+    },
+    {
+      "@id": "DT6007",
+      "@type": "Dataset",
+      "name": "List of probabilities",
+      "url": "TODO"
+    },
+    {
+      "@id": "DT6004",
+      "@type": "Dataset",
+      "name": "SLSMF sea level data (Sea Level Station Monitoring Facility)",
+      "url": "TODO"
+    },
+    {
+      "@id": "DT6005",
+      "@type": "Dataset",
+      "name": "GNSS displacements",
+      "url": "TODO"
+    },
+    {
+      "@id": "event_file",
       "@type": "Dataset",
       "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5207-param"
-      }
+      "url": "TODO"
     },
     {
-      "@id": "DT5208",
+      "@id": "fault_model",
       "@type": "Dataset",
       "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5208-param"
-      }
+      "url": "TODO"
     },
     {
-      "@id": "DT5209",
+      "@id": "misfit_output",
       "@type": "Dataset",
       "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5209-param"
-      }
-    },
-    {
-      "@id": "DT5210",
-      "@type": "Dataset",
-      "name": "TODO",
-      "abstract": "TODO",
-      "url": "TODO",
-      "author": {
-        "@id": "TODO"
-      },
-      "exampleOfWork": {
-        "@id": "#DT5210-param"
-      }
-    },
-    {
-      "@id": "TODO",
-      "@type": "Person",
-      "name": "TODO",
-      "affiliation": {
-        "@id": "TODO"
-      }
-    },
-    {
-      "@id": "TODO",
-      "@type": "Organization",
-      "name": "TODO"
+      "url": "TODO"
     }
   ]
 }

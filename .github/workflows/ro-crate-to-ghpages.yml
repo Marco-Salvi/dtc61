@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   build-and-deploy:
+    environment: github-pages
     permissions:
       id-token: write
       pages: write

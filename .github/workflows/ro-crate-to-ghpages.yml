@@ -4,6 +4,9 @@ on:
     branches:
       - main
 jobs:
+  permissions:
+    id-token: write
+    pages: write
   build-and-deploy:
     runs-on: ubuntu-22.04
     concurrency: ci-${{github.ref}}

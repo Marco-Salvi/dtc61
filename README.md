@@ -2,7 +2,7 @@
 
 [Graph of the cwl workflow](https://view.commonwl.org/workflows/github.com/Marco-Salvi/dtc61/blob/main/WF6101.cwl#)
 
-[Web preview of the ro-crate metadata](https://marco-salvi.github.io/dtc61/)
+[Web preview of the ro-crate metadata](https://marco-salvi.github.io/dtc61/ro-crate-preview.html)
 
 input dello step st610110
 o

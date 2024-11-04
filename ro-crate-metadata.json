@@ -144,22 +144,19 @@
           "@id": "WF6101.cwl"
         },
         {
-          "@id": "DT6003"
+          "@id": "DT6103"
         },
         {
-          "@id": "DT6013"
+          "@id": "DT6113"
         },
         {
-          "@id": "DT6006"
+          "@id": "DT6106"
         },
         {
-          "@id": "DT6101"
+          "@id": "DT6108"
         },
         {
-          "@id": "DT6008"
-        },
-        {
-          "@id": "DT6010"
+          "@id": "DT6110"
         },
         {
           "@id": "sea_level_data"
@@ -168,28 +165,28 @@
           "@id": "gnss_data"
         },
         {
-          "@id": "DT6001"
+          "@id": "DT6101"
         },
         {
-          "@id": "DT6002"
+          "@id": "DT6102"
         },
         {
-          "@id": "DT6011"
+          "@id": "DT6111"
         },
         {
-          "@id": "DT6007"
+          "@id": "DT6107"
         },
         {
-          "@id": "DT6004"
+          "@id": "DT6104"
         },
         {
-          "@id": "DT6005"
+          "@id": "DT6105"
         },
         {
-          "@id": "DT6009"
+          "@id": "DT6109"
         },
         {
-          "@id": "DT6012"
+          "@id": "DT6112"
         },
         {
           "@id": "event_file"
@@ -267,50 +264,50 @@
       },
       "input": [
         {
-          "@id": "#DT6003->WF6101.cwl"
+          "@id": "#DT6103->WF6101.cwl"
         },
         {
-          "@id": "#DT6004->WF6101.cwl"
+          "@id": "#DT6104->WF6101.cwl"
         },
         {
-          "@id": "#DT6005->WF6101.cwl"
+          "@id": "#DT6105->WF6101.cwl"
         },
         {
-          "@id": "#DT6009->WF6101.cwl"
+          "@id": "#DT6109->WF6101.cwl"
         },
         {
-          "@id": "#DT6001->WF6101.cwl"
+          "@id": "#DT6101->WF6101.cwl"
         },
         {
-          "@id": "#DT6002->WF6101.cwl"
+          "@id": "#DT6102->WF6101.cwl"
         }
       ],
       "output": [
         {
-          "@id": "#WF6101.cwl->DT6012"
+          "@id": "#WF6101.cwl->DT6112"
         },
         {
-          "@id": "#WF6101.cwl->DT6013"
+          "@id": "#WF6101.cwl->DT6113"
         },
         {
-          "@id": "#WF6101.cwl->DT6006"
+          "@id": "#WF6101.cwl->DT6106"
         },
         {
-          "@id": "#WF6101.cwl->DT6007"
+          "@id": "#WF6101.cwl->DT6107"
         },
         {
-          "@id": "#WF6101.cwl->DT6008"
+          "@id": "#WF6101.cwl->DT6108"
         },
         {
-          "@id": "#WF6101.cwl->DT6010"
+          "@id": "#WF6101.cwl->DT6110"
         },
         {
-          "@id": "#WF6101.cwl->DT6011"
+          "@id": "#WF6101.cwl->DT6111"
         }
       ]
     },
     {
-      "@id": "#DT6003->WF6101.cwl",
+      "@id": "#DT6103->WF6101.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -318,13 +315,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6003"
+        "@id": "DT6103"
       },
-      "name": "DT6003",
+      "name": "DT6103",
       "valueRequired": true
     },
     {
-      "@id": "#DT6004->WF6101.cwl",
+      "@id": "#DT6104->WF6101.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -332,13 +329,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6004"
+        "@id": "DT6104"
       },
-      "name": "DT6004",
+      "name": "DT6104",
       "valueRequired": true
     },
     {
-      "@id": "#DT6005->WF6101.cwl",
+      "@id": "#DT6105->WF6101.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -346,13 +343,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6005"
+        "@id": "DT6105"
       },
-      "name": "DT6005",
+      "name": "DT6105",
       "valueRequired": true
     },
     {
-      "@id": "#DT6009->WF6101.cwl",
+      "@id": "#DT6109->WF6101.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -360,13 +357,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6009"
+        "@id": "DT6109"
       },
-      "name": "DT6009",
+      "name": "DT6109",
       "valueRequired": true
     },
     {
-      "@id": "#DT6001->WF6101.cwl",
+      "@id": "#DT6101->WF6101.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -374,13 +371,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6001"
+        "@id": "DT6101"
       },
-      "name": "DT6001",
+      "name": "DT6101",
       "valueRequired": true
     },
     {
-      "@id": "#DT6002->WF6101.cwl",
+      "@id": "#DT6102->WF6101.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -388,13 +385,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6002"
+        "@id": "DT6102"
       },
-      "name": "DT6002",
+      "name": "DT6102",
       "valueRequired": true
     },
     {
-      "@id": "#WF6101.cwl->DT6011",
+      "@id": "#WF6101.cwl->DT6111",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -402,13 +399,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6011"
+        "@id": "DT6111"
       },
-      "name": "DT6011",
+      "name": "DT6111",
       "valueRequired": true
     },
     {
-      "@id": "#WF6101.cwl->DT6012",
+      "@id": "#WF6101.cwl->DT6112",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -416,13 +413,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6012"
+        "@id": "DT6112"
       },
-      "name": "DT6012",
+      "name": "DT6112",
       "valueRequired": true
     },
     {
-      "@id": "#WF6101.cwl->DT6013",
+      "@id": "#WF6101.cwl->DT6113",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -430,13 +427,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6013"
+        "@id": "DT6113"
       },
-      "name": "DT6013",
+      "name": "DT6113",
       "valueRequired": true
     },
     {
-      "@id": "#WF6101.cwl->DT6006",
+      "@id": "#WF6101.cwl->DT6106",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -444,13 +441,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6006"
+        "@id": "DT6106"
       },
-      "name": "DT6006",
+      "name": "DT6106",
       "valueRequired": true
     },
     {
-      "@id": "#WF6101.cwl->DT6007",
+      "@id": "#WF6101.cwl->DT6107",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -458,13 +455,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6007"
+        "@id": "DT6107"
       },
-      "name": "DT6007",
+      "name": "DT6107",
       "valueRequired": true
     },
     {
-      "@id": "#WF6101.cwl->DT6008",
+      "@id": "#WF6101.cwl->DT6108",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -472,13 +469,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6008"
+        "@id": "DT6108"
       },
-      "name": "DT6008",
+      "name": "DT6108",
       "valueRequired": true
     },
     {
-      "@id": "#WF6101.cwl->DT6010",
+      "@id": "#WF6101.cwl->DT6110",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -486,9 +483,9 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6010"
+        "@id": "DT6110"
       },
-      "name": "DT6010",
+      "name": "DT6110",
       "valueRequired": true
     },
     {
@@ -527,17 +524,17 @@
       },
       "input": [
         {
-          "@id": "#DT6012->ST610109.cwl"
+          "@id": "#DT6112->ST610109.cwl"
         }
       ],
       "output": [
         {
-          "@id": "#ST610109.cwl->DT6013"
+          "@id": "#ST610109.cwl->DT6113"
         }
       ]
     },
     {
-      "@id": "#DT6012->ST610109.cwl",
+      "@id": "#DT6112->ST610109.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -545,13 +542,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6012"
+        "@id": "DT6112"
       },
-      "name": "DT6012",
+      "name": "DT6112",
       "valueRequired": true
     },
     {
-      "@id": "#ST610109.cwl->DT6013",
+      "@id": "#ST610109.cwl->DT6113",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -559,9 +556,9 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6013"
+        "@id": "DT6113"
       },
-      "name": "DT6013",
+      "name": "DT6113",
       "valueRequired": true
     },
     {
@@ -585,13 +582,13 @@
       "url": "TODO"
     },
     {
-      "@id": "DT6012",
+      "@id": "DT6112",
       "@type": "Dataset",
       "name": "Hazard curves",
       "url": "TODO"
     },
     {
-      "@id": "DT6013",
+      "@id": "DT6113",
       "@type": "Dataset",
       "name": "Hazard visual products",
       "url": "TODO"
@@ -648,29 +645,29 @@
       },
       "input": [
         {
-          "@id": "#DT6009->ST610106.cwl"
+          "@id": "#DT6109->ST610106.cwl"
         },
         {
-          "@id": "#DT6002->ST610106.cwl"
+          "@id": "#DT6102->ST610106.cwl"
         },
         {
-          "@id": "#DT6006->ST610106.cwl"
+          "@id": "#DT6106->ST610106.cwl"
         },
         {
-          "@id": "#DT6008->ST610106.cwl"
+          "@id": "#DT6108->ST610106.cwl"
         }
       ],
       "output": [
         {
-          "@id": "#ST610106.cwl->DT6010"
+          "@id": "#ST610106.cwl->DT6110"
         },
         {
-          "@id": "#ST610106.cwl->DT6011"
+          "@id": "#ST610106.cwl->DT6111"
         }
       ]
     },
     {
-      "@id": "#DT6009->ST610106.cwl",
+      "@id": "#DT6109->ST610106.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -678,13 +675,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6009"
+        "@id": "DT6109"
       },
-      "name": "DT6009",
+      "name": "DT6109",
       "valueRequired": true
     },
     {
-      "@id": "#DT6002->ST610106.cwl",
+      "@id": "#DT6102->ST610106.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -692,13 +689,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6002"
+        "@id": "DT6102"
       },
-      "name": "DT6002",
+      "name": "DT6102",
       "valueRequired": true
     },
     {
-      "@id": "#DT6006->ST610106.cwl",
+      "@id": "#DT6106->ST610106.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -706,13 +703,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6006"
+        "@id": "DT6106"
       },
-      "name": "DT6006",
+      "name": "DT6106",
       "valueRequired": true
     },
     {
-      "@id": "#DT6008->ST610106.cwl",
+      "@id": "#DT6108->ST610106.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -720,13 +717,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6008"
+        "@id": "DT6108"
       },
-      "name": "DT6008",
+      "name": "DT6108",
       "valueRequired": true
     },
     {
-      "@id": "#ST610106.cwl->DT6011",
+      "@id": "#ST610106.cwl->DT6111",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -734,13 +731,13 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6011"
+        "@id": "DT6111"
       },
-      "name": "DT6011",
+      "name": "DT6111",
       "valueRequired": true
     },
     {
-      "@id": "#ST610106.cwl->DT6010",
+      "@id": "#ST610106.cwl->DT6110",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
@@ -748,9 +745,9 @@
       },
       "description": "TODO",
       "workExample": {
-        "@id": "DT6010"
+        "@id": "DT6110"
       },
-      "name": "DT6010",
+      "name": "DT6110",
       "valueRequired": true
     },
     {
@@ -857,19 +854,19 @@
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "DT6002",
+      "@id": "DT6102",
       "@type": "Dataset",
       "name": "NEAMTHM18",
       "url": "TODO"
     },
     {
-      "@id": "DT6006",
+      "@id": "DT6106",
       "@type": "Dataset",
       "name": "List of scenarios (indices) with parameters",
       "url": "TODO"
     },
     {
-      "@id": "DT6010",
+      "@id": "DT6110",
       "@type": "Dataset",
       "name": "Tsunami intensity",
       "url": "TODO"
@@ -887,19 +884,19 @@
       "url": "TODO"
     },
     {
-      "@id": "DT6008",
+      "@id": "DT6108",
       "@type": "Dataset",
       "name": "List of landslade scenarios",
       "url": "TODO"
     },
     {
-      "@id": "DT6009",
+      "@id": "DT6109",
       "@type": "Dataset",
       "name": "SimGrids",
       "url": "TODO"
     },
     {
-      "@id": "DT6011",
+      "@id": "DT6111",
       "@type": "Dataset",
       "name": "Ground displacements at selected POIs",
       "url": "TODO"
@@ -932,15 +929,9 @@
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "DT6003",
+      "@id": "DT6103",
       "@type": "Dataset",
       "name": "EIDA seismic data archive (European Integrated Data Archive)",
-      "url": "TODO"
-    },
-    {
-      "@id": "DT6101",
-      "@type": "Dataset",
-      "name": "TODO: what is this dataset?",
       "url": "TODO"
     },
     {
@@ -956,25 +947,25 @@
       "url": "TODO"
     },
     {
-      "@id": "DT6001",
+      "@id": "DT6101",
       "@type": "Dataset",
       "name": "Scenario Library",
       "url": "TODO"
     },
     {
-      "@id": "DT6007",
+      "@id": "DT6107",
       "@type": "Dataset",
       "name": "List of probabilities",
       "url": "TODO"
     },
     {
-      "@id": "DT6004",
+      "@id": "DT6104",
       "@type": "Dataset",
       "name": "SLSMF sea level data (Sea Level Station Monitoring Facility)",
       "url": "TODO"
     },
     {
-      "@id": "DT6005",
+      "@id": "DT6105",
       "@type": "Dataset",
       "name": "GNSS displacements",
       "url": "TODO"

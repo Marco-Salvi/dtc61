@@ -4,35 +4,35 @@ cwlVersion: v1.2
 class: Workflow
 
 inputs:
-  DT6012: Directory
+  DT6112: Directory
 
 outputs:
-  DT6013:
+  DT6113:
     type: Directory
-    outputSource: SS6116/DT6013
+    outputSource: SS6116/DT6113
 
 steps:
   SS6115:
     in:
-      DT6012: DT6012
+      DT6112: DT6112
     run:
       class: Operation
       inputs:
-        DT6012: Directory
+        DT6112: Directory
       outputs:
         alert_levels: Directory
     out:
     - alert_levels
   SS6116:
     in:
-      DT6012: DT6012
+      DT6112: DT6112
       alert_levels: SS6115/alert_levels
     run:
       class: Operation
       inputs:
-        DT6012: Directory
+        DT6112: Directory
         alert_levels: Directory
       outputs:
-        DT6013: Directory
+        DT6113: Directory
     out:
-    - DT6013
+    - DT6113

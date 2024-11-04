@@ -4,80 +4,80 @@ cwlVersion: v1.2
 class: Workflow
 
 inputs:
-  DT6002:
+  DT6102:
     doc: NEAMTHM18
     type: Directory
-  DT6006:
+  DT6106:
     type: Directory
-  DT6008:
+  DT6108:
     type: Directory
-  DT6009:
+  DT6109:
     type: Directory
 
 outputs:
-  DT6010:
+  DT6110:
     doc: Tsunami_intensity -> SS6108 oppure SS6107
     type: Directory
-    outputSource: SS6107/DT6010
-  DT6011:
+    outputSource: SS6107/DT6110
+  DT6111:
     doc: può essere generato da -> SS6106 oppure SS6107 oppure SS6108
     type: Directory
-    outputSource: SS6107/DT6011
+    outputSource: SS6107/DT6111
 
 steps:
   SS6106:
     doc: SeisSol
     in:
-      DT6006: DT6006
-      DT6009: DT6009
+      DT6106: DT6106
+      DT6109: DT6109
     run:
       class: Operation
       inputs:
-        DT6006: Directory
-        DT6009: Directory
+        DT6106: Directory
+        DT6109: Directory
       outputs:
         deformation: Directory
     out:
     - deformation
   SS6107:
     in:
-      DT6006: DT6006
-      DT6009: DT6009
+      DT6106: DT6106
+      DT6109: DT6109
     run:
       class: Operation
       inputs:
-        DT6006: Directory
-        DT6009: Directory
+        DT6106: Directory
+        DT6109: Directory
       outputs:
-        DT6010: Directory
-        DT6011: Directory
+        DT6110: Directory
+        DT6111: Directory
     out:
-    - DT6010
-    - DT6011
+    - DT6110
+    - DT6111
   SS6108:
     doc: Landslide-HySEA
     in:
-      DT6008: DT6008
-      DT6009: DT6009
+      DT6108: DT6108
+      DT6109: DT6109
     run:
       class: Operation
       inputs:
-        DT6008: Directory
-        DT6009: Directory
+        DT6108: Directory
+        DT6109: Directory
       outputs:
-        DT6010: Directory
+        DT6110: Directory
     out:
-    - DT6010
+    - DT6110
   SS6109:
     doc: BingClaw
     in:
-      DT6008: DT6008
-      DT6009: DT6009
+      DT6108: DT6108
+      DT6109: DT6109
     run:
       class: Operation
       inputs:
-        DT6008: Directory
-        DT6009: Directory
+        DT6108: Directory
+        DT6109: Directory
       outputs:
         tbd: Directory
     out:
@@ -85,30 +85,30 @@ steps:
   SS6110:
     doc: SHALTOP
     in:
-      DT6008: DT6008
-      DT6009: DT6009
+      DT6108: DT6108
+      DT6109: DT6109
     run:
       class: Operation
       inputs:
-        DT6008: Directory
-        DT6009: Directory
+        DT6108: Directory
+        DT6109: Directory
       outputs:
         tbd_2: Directory
     out:
     - tbd_2
   SS6111:
-    doc: InundationAI DT6010 può essere generato da -> SS6106 oppure SS6107 oppure
+    doc: InundationAI DT6110 può essere generato da -> SS6106 oppure SS6107 oppure
       SS6108
     in:
-      DT6010: SS6107/DT6010
+      DT6110: SS6107/DT6110
     run:
       class: Operation
       inputs:
-        DT6010: Directory
+        DT6110: Directory
       outputs:
-        DT6010: Directory
+        DT6110: Directory
     out:
-    - DT6010
+    - DT6110
   SS6112:
     doc: Source-to-wave filter
     in:
@@ -132,12 +132,12 @@ steps:
   SS6113:
     doc: Precomputed simulation
     in:
-      DT6002: DT6002
+      DT6102: DT6102
     run:
       class: Operation
       inputs:
-        DT6002: Directory
+        DT6102: Directory
       outputs:
-        DT6010: Directory
+        DT6110: Directory
     out:
-    - DT6010
+    - DT6110

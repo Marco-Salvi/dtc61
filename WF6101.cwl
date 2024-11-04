@@ -7,49 +7,49 @@ requirements:
   SubworkflowFeatureRequirement: {}
 
 inputs:
-  DT6001: Directory
-  DT6002: Directory
-  DT6003: Directory
-  DT6004: Directory
-  DT6005: Directory
-  DT6009: Directory
+  DT6101: Directory
+  DT6102: Directory
+  DT6103: Directory
+  DT6104: Directory
+  DT6105: Directory
+  DT6109: Directory
 
 outputs:
-  DT6006:
+  DT6106:
     type: Directory
-    outputSource: ST610105/DT6006
-  DT6007:
+    outputSource: ST610105/DT6106
+  DT6107:
     type: Directory
-    outputSource: ST610105/DT6007
-  DT6008:
+    outputSource: ST610105/DT6107
+  DT6108:
     type: Directory
-    outputSource: ST610110/DT6008
-  DT6010:
+    outputSource: ST610110/DT6108
+  DT6110:
     type: Directory
-    outputSource: ST610106/DT6010
-  DT6011:
+    outputSource: ST610106/DT6110
+  DT6111:
     type: Directory
-    outputSource: ST610106/DT6011
-  DT6012:
+    outputSource: ST610106/DT6111
+  DT6112:
     type: Directory
-    outputSource: ST610108/DT6012
-  DT6013:
+    outputSource: ST610108/DT6112
+  DT6113:
     type: Directory
-    outputSource: ST610109/DT6013
+    outputSource: ST610109/DT6113
 
 steps:
   ST610101:
     doc: SS6101
     in:
-      DT6003: DT6003
-      DT6004: DT6004
-      DT6005: DT6005
+      DT6103: DT6103
+      DT6104: DT6104
+      DT6105: DT6105
     run:
       class: Operation
       inputs:
-        DT6003: Directory
-        DT6004: Directory
-        DT6005: Directory
+        DT6103: Directory
+        DT6104: Directory
+        DT6105: Directory
       outputs:
         DT6101: Directory
     out:
@@ -57,11 +57,11 @@ steps:
   ST610102:
     doc: SS6102
     in:
-      DT6001: DT6001
+      DT6101: DT6101
     run:
       class: Operation
       inputs:
-        DT6001: Directory
+        DT6101: Directory
       outputs:
         event_file: File
     out:
@@ -69,11 +69,11 @@ steps:
   ST610103:
     doc: SS6103
     in:
-      DT6001: DT6001
+      DT6101: DT6101
     run:
       class: Operation
       inputs:
-        DT6001: Directory
+        DT6101: Directory
       outputs:
         sea_level_data: Directory
     out:
@@ -81,11 +81,11 @@ steps:
   ST610104:
     doc: SS6104
     in:
-      DT6001: DT6001
+      DT6101: DT6101
     run:
       class: Operation
       inputs:
-        DT6001: Directory
+        DT6101: Directory
       outputs:
         gnss_data: Directory
     out:
@@ -93,43 +93,43 @@ steps:
   ST610105:
     doc: SS6105
     in:
-      DT6002: DT6002
+      DT6102: DT6102
       event_file: ST610102/event_file
       fault_model: ST610111/fault_model
     run:
       class: Operation
       inputs:
-        DT6002: Directory
+        DT6102: Directory
         event_file: File
         fault_model: Directory
       outputs:
-        DT6006: Directory
-        DT6007: Directory
+        DT6106: Directory
+        DT6107: Directory
     out:
-    - DT6006
-    - DT6007
+    - DT6106
+    - DT6107
   ST610106:
     in:
-      DT6002: DT6002
-      DT6006: ST610105/DT6006
-      DT6008: ST610110/DT6008
-      DT6009: DT6009
+      DT6102: DT6102
+      DT6106: ST610105/DT6106
+      DT6108: ST610110/DT6108
+      DT6109: DT6109
     run: ST610106.cwl
     out:
-    - DT6010
-    - DT6011
+    - DT6110
+    - DT6111
   ST610107:
     doc: SS6113
     in:
-      DT6010: ST610106/DT6010
-      DT6011: ST610106/DT6011
+      DT6110: ST610106/DT6110
+      DT6111: ST610106/DT6111
       gnss_data: ST610104/gnss_data
       sea_level_data: ST610103/sea_level_data
     run:
       class: Operation
       inputs:
-        DT6010: Directory
-        DT6011: Directory
+        DT6110: Directory
+        DT6111: Directory
         gnss_data: Directory
         sea_level_data: Directory
       outputs:
@@ -139,25 +139,25 @@ steps:
   ST610108:
     doc: SS6114
     in:
-      DT6007: ST610105/DT6007
-      DT6010: ST610106/DT6010
+      DT6107: ST610105/DT6107
+      DT6110: ST610106/DT6110
       misfit_output: ST610107/misfit_output
     run:
       class: Operation
       inputs:
-        DT6007: Directory
-        DT6010: Directory
+        DT6107: Directory
+        DT6110: Directory
         misfit_output: Directory
       outputs:
-        DT6012: Directory
+        DT6112: Directory
     out:
-    - DT6012
+    - DT6112
   ST610109:
     in:
-      DT6012: ST610108/DT6012
+      DT6112: ST610108/DT6112
     run: ST610109.cwl
     out:
-    - DT6013
+    - DT6113
   ST610110:
     doc: SS6117
     in:
@@ -167,9 +167,9 @@ steps:
       inputs:
         fault_model: Directory
       outputs:
-        DT6008: Directory
+        DT6108: Directory
     out:
-    - DT6008
+    - DT6108
   ST610111:
     doc: SS6118
     in:

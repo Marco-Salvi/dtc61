@@ -585,13 +585,13 @@
       "@id": "DT6112",
       "@type": "Dataset",
       "name": "Hazard curves",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/9a9f8b23-55ef-4f05-aa2f-276ad84a579b"
     },
     {
       "@id": "DT6113",
       "@type": "Dataset",
       "name": "Hazard visual products",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/42ef6530-c082-457b-8426-80dab28f34e7"
     },
     {
       "@id": "SS6101",
@@ -857,19 +857,19 @@
       "@id": "DT6102",
       "@type": "Dataset",
       "name": "NEAMTHM18",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/c55ff897-d8d5-4d51-97d5-1eaff3003ff2"
     },
     {
       "@id": "DT6106",
       "@type": "Dataset",
       "name": "List of scenarios (indices) with parameters",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/18b1944f-dca9-469a-93b4-b66ae1afc952"
     },
     {
       "@id": "DT6110",
       "@type": "Dataset",
       "name": "Tsunami intensity",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/d19947f4-9538-4a07-8be1-b89cd87c6d49"
     },
     {
       "@id": "deformation",
@@ -887,19 +887,19 @@
       "@id": "DT6108",
       "@type": "Dataset",
       "name": "List of landslade scenarios",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/64ff29df-aa2f-42e1-86d9-ca18ae56daac"
     },
     {
       "@id": "DT6109",
       "@type": "Dataset",
       "name": "SimGrids",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/71851ad5-7864-496e-8079-42884d9d3939"
     },
     {
       "@id": "DT6111",
       "@type": "Dataset",
       "name": "Ground displacements at selected POIs",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/55516e7a-cea7-4f4d-90aa-7f6a1f6e0bc3"
     },
     {
       "@id": "tbd_2",
@@ -932,7 +932,7 @@
       "@id": "DT6103",
       "@type": "Dataset",
       "name": "EIDA seismic data archive (European Integrated Data Archive)",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/47b8f86d-b5c3-4791-b70e-c0cbee3be371"
     },
     {
       "@id": "sea_level_data",
@@ -950,25 +950,25 @@
       "@id": "DT6101",
       "@type": "Dataset",
       "name": "Scenario Library",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/8f11a5cf-cf82-4db2-a657-a4cfa530f639"
     },
     {
       "@id": "DT6107",
       "@type": "Dataset",
       "name": "List of probabilities",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/0b7b8fe6-b1a5-4acf-a998-2675631f5020"
     },
     {
       "@id": "DT6104",
       "@type": "Dataset",
       "name": "SLSMF sea level data (Sea Level Station Monitoring Facility)",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/db8f095e-73d9-4460-be24-5670188db51d"
     },
     {
       "@id": "DT6105",
       "@type": "Dataset",
       "name": "GNSS displacements",
-      "url": "TODO"
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/0af8b1cb-9304-4b51-9252-10c4a54dc2ba"
     },
     {
       "@id": "event_file",

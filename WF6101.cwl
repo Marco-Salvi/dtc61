@@ -7,7 +7,6 @@ requirements:
   SubworkflowFeatureRequirement: {}
 
 inputs:
-  DT6101: Directory
   DT6102: Directory
   DT6103: Directory
   DT6104: Directory
@@ -15,6 +14,9 @@ inputs:
   DT6109: Directory
 
 outputs:
+  DT6101:
+    type: Directory
+    outputSource: ST610101/DT6101
   DT6106:
     type: Directory
     outputSource: ST610105/DT6106
@@ -95,13 +97,11 @@ steps:
     in:
       DT6102: DT6102
       event_file: ST610102/event_file
-      fault_model: ST610111/fault_model
     run:
       class: Operation
       inputs:
         DT6102: Directory
         event_file: File
-        fault_model: Directory
       outputs:
         DT6106: Directory
         DT6107: Directory
@@ -123,15 +123,15 @@ steps:
     in:
       DT6110: ST610106/DT6110
       DT6111: ST610106/DT6111
-      gnss_data: ST610104/gnss_data
       sea_level_data: ST610103/sea_level_data
+      gnss_data: ST610104/gnss_data
     run:
       class: Operation
       inputs:
         DT6110: Directory
         DT6111: Directory
-        gnss_data: Directory
         sea_level_data: Directory
+        gnss_data: Directory
       outputs:
         misfit_output: Directory
     out:

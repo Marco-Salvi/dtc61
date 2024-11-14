@@ -23,7 +23,7 @@ outputs:
     type: Directory
     outputSource: SS6107/DT6110
   DT6111:
-    doc: Ground deformation: può essere generato da SS6106 oppure SS6107
+    doc: Ground deformation
     type: Directory
     outputSource: SS6107/DT6111
 
@@ -39,9 +39,9 @@ steps:
         DT6106: Directory
         DT6109: Directory
       outputs:
-        DT6111: Directory
+        deformation: Directory
     out:
-    - DT6111
+    - deformation
   SS6107:
     doc: Tsunami-HySEA
     in:
@@ -55,9 +55,11 @@ steps:
       outputs:
         DT6110: Directory
         DT6111: Directory
+        offshore time series: Directory
     out:
     - DT6110
     - DT6111
+    - offshore time series
   SS6108:
     doc: Landslide-HySEA
     in:
@@ -116,21 +118,19 @@ steps:
     doc: Source-to-wave filter
     in:
       deformation: SS6106/deformation
-      dynamic landslide deformation: SS6109/dynamic landslide deformation
-      dynamic landslide deformation: SS6110/dynamic landslide deformation
+      dynamic landslide deformation 1: SS6109/dynamic landslide deformation
+      dynamic landslide deformation 2: SS6110/dynamic landslide deformation
     run:
       class: Operation
       inputs:
         deformation: Directory
-        dynamic landslide deformation: Directory
-        dynamic landslide deformation: Directory
+        dynamic landslide deformation 1: Directory
+        dynamic landslide deformation 2: Directory
       outputs:
         deformation: Directory
         dynamic landslide deformation: Directory
-        dynamic landslide deformation: Directory
     out:
     - deformation
-    - dynamic landslide deformation
     - dynamic landslide deformation
   SS6119:
     doc: Retrieving of precomputed simulations

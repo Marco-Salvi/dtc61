@@ -59,7 +59,7 @@ steps:
   ST610102:
     doc: SS6102
     in:
-      DT6101: DT6101
+      DT6101: ST610101/DT6101
     run:
       class: Operation
       inputs:
@@ -71,7 +71,7 @@ steps:
   ST610103:
     doc: SS6103
     in:
-      DT6101: DT6101
+      DT6101: ST610101/DT6101
     run:
       class: Operation
       inputs:
@@ -83,7 +83,7 @@ steps:
   ST610104:
     doc: SS6104
     in:
-      DT6101: DT6101
+      DT6101: ST610101/DT6101
     run:
       class: Operation
       inputs:

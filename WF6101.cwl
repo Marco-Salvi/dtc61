@@ -7,35 +7,53 @@ requirements:
   SubworkflowFeatureRequirement: {}
 
 inputs:
-  DT6102: Directory
-  DT6103: Directory
-  DT6104: Directory
-  DT6105: Directory
-  DT6109: Directory
+  DT6102:
+    doc:  NEAMTHM18
+    type: Directory
+  DT6103: 
+    doc: EIDA seismic data archive
+    type: Directory
+  DT6104: 
+    doc: SLSMF sea level data 
+    type: Directory
+  DT6105: 
+    doc: GNSS displacements 
+    type: Directory
+  DT6109:
+    doc: topo-bathymetric grids
+    type: Directory
 
 outputs:
   DT6101:
+    doc: Scenario Library
     type: Directory
     outputSource: ST610101/DT6101
   DT6106:
+    doc: list of earthquake scenarios
     type: Directory
     outputSource: ST610105/DT6106
   DT6107:
+    doc: list of scenario probabilities
     type: Directory
     outputSource: ST610105/DT6107
   DT6108:
+    doc: list of landslide scenarios
     type: Directory
     outputSource: ST610110/DT6108
   DT6110:
+    doc: Tsunami intensities
     type: Directory
     outputSource: ST610106/DT6110
   DT6111:
+    doc:  Ground deformation
     type: Directory
     outputSource: ST610106/DT6111
   DT6112:
+    doc: Hazard curves
     type: Directory
     outputSource: ST610108/DT6112
   DT6113:
+    doc: Hazard maps
     type: Directory
     outputSource: ST610109/DT6113
 

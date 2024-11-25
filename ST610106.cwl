@@ -19,7 +19,7 @@ inputs:
 
 outputs:
   DT6110:
-    doc: Tsunami_intensity
+    doc: Tsunami intensities
     type: Directory
     outputSource: SS6107/DT6110
   DT6111:

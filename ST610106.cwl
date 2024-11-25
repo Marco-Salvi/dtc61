@@ -85,9 +85,9 @@ steps:
         DT6108: Directory
         DT6109: Directory
       outputs:
-        dynamic landslide deformation: Directory
+        dynamic landslide deformation 1: Directory
     out:
-    - dynamic landslide deformation
+    - dynamic landslide deformation 1
   SS6110:
     doc: SHALTOP
     in:
@@ -99,9 +99,9 @@ steps:
         DT6108: Directory
         DT6109: Directory
       outputs:
-        dynamic landslide deformation: Directory
+        dynamic landslide deformation 2: Directory
     out:
-    - dynamic landslide deformation
+    - dynamic landslide deformation 2
   SS6111:
     doc: InundationAI 
     in:

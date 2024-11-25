@@ -161,11 +161,11 @@ steps:
   ST610110:
     doc: SS6117
     in:
-      fault_model: ST610111/fault_model
+      shakemaps: ST610111/shakemaps
     run:
       class: Operation
       inputs:
-        fault_model: Directory
+        shakemaps: Directory
       outputs:
         DT6108: Directory
     out:
@@ -179,6 +179,6 @@ steps:
       inputs:
         gnss_data: Directory
       outputs:
-        fault_model: Directory
+        shakemaps: Directory
     out:
-    - fault_model
+    - shakemaps

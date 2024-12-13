@@ -49,11 +49,11 @@ outputs:
     type: Directory
     outputSource: ST610106/DT6111
   DT6112:
-    doc: Hazard curves
+    doc: Tsunami hazard curves
     type: Directory
     outputSource: ST610108/DT6112
   DT6113:
-    doc: Hazard maps
+    doc: Hazard visual products
     type: Directory
     outputSource: ST610109/DT6113
 

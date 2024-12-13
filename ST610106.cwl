@@ -39,9 +39,9 @@ steps:
         DT6106: Directory
         DT6109: Directory
       outputs:
-        deformation: Directory
+        dynamic deformation: Directory
     out:
-    - deformation
+    - dynamic deformation
   SS6107:
     doc: Tsunami-HySEA
     in:
@@ -117,20 +117,20 @@ steps:
   SS6112:
     doc: Source-to-wave filter
     in:
-      deformation: SS6106/deformation
+      dynamic deformation: SS6106/dynamic deformation
       dynamic landslide deformation 1: SS6109/dynamic landslide deformation
       dynamic landslide deformation 2: SS6110/dynamic landslide deformation
     run:
       class: Operation
       inputs:
-        deformation: Directory
+        dynamic deformation: Directory
         dynamic landslide deformation 1: Directory
         dynamic landslide deformation 2: Directory
       outputs:
-        deformation: Directory
+        dynamic deformation: Directory
         dynamic landslide deformation: Directory
     out:
-    - deformation
+    - dynamic deformation
     - dynamic landslide deformation
   SS6119:
     doc: Retrieving of precomputed simulations

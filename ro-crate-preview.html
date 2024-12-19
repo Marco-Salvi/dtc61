@@ -35,14 +35,17 @@
       "@id": "./",
       "@type": "Dataset",
       "name": "Probabilistic Tsunami Forecasting",
-      "description": "Workflow aiming at computing the probability of exceedance of given tsunami intensities at given locations, conditional upon an occurring tsunamigenic event. Presently made by a master python code managing the execution of different steps + a suite of python codes for each step + a few bash scripts for job submission to HPC resources. Other softwares described as separate DA are also to be considered part of the workflow.",
+      "description": "Workflow aiming at computing the probability of exceedance of given tsunami intensities at given locations, conditional upon an occurring tsunamigenic event. Presently made by a master python code managing the execution of different steps + a suite of python codes for each step + bash scripts for job submission to HPC resources. Other softwares described as separate DA are also to be considered part of the workflow.",
       "license": "Open for non-cemmercial use. Type of license to be decided",
       "author": [
         {
-          "@id": "0000-0003-4551-3339"
+          "@id": "INGV"
         },
         {
-          "@id": "0000-0002-3010-8050"
+          "@id": "NGI"
+        },
+        {
+          "@id": "UMA"
         }
       ],
       "conformsTo": [
@@ -61,37 +64,10 @@
           "@id": "WF6101.cwl"
         },
         {
-          "@id": "DT6103"
-        },
-        {
-          "@id": "DT6113"
-        },
-        {
-          "@id": "DT6106"
-        },
-        {
-          "@id": "DT6108"
-        },
-        {
-          "@id": "DT6110"
-        },
-        {
-          "@id": "sea_level_data"
-        },
-        {
-          "@id": "gnss_data"
-        },
-        {
-          "@id": "DT6101"
-        },
-        {
           "@id": "DT6102"
         },
         {
-          "@id": "DT6111"
-        },
-        {
-          "@id": "DT6107"
+          "@id": "DT6103"
         },
         {
           "@id": "DT6104"
@@ -103,13 +79,40 @@
           "@id": "DT6109"
         },
         {
+          "@id": "DT6101"
+        },
+        {
+          "@id": "DT6106"
+        },
+        {
+          "@id": "DT6107"
+        },
+        {
+          "@id": "DT6108"
+        },
+        {
+          "@id": "DT6110"
+        },
+        {
+          "@id": "DT6111"
+        },
+        {
           "@id": "DT6112"
+        },
+        {
+          "@id": "DT6113"
         },
         {
           "@id": "event_file"
         },
         {
-          "@id": "fault_model"
+          "@id": "sea_level_data"
+        },
+        {
+          "@id": "gnss_data"
+        },
+        {
+          "@id": "shakemaps"
         },
         {
           "@id": "misfit_output"
@@ -118,10 +121,22 @@
           "@id": "SS6101"
         },
         {
+          "@id": "SS6102"
+        },
+        {
           "@id": "SS6103"
         },
         {
+          "@id": "SS6104"
+        },
+        {
           "@id": "SS6105"
+        },
+        {
+          "@id": "ST610106.cwl"
+        },
+        {
+          "@id": "SS6113"
         },
         {
           "@id": "SS6114"
@@ -130,22 +145,10 @@
           "@id": "SS6117"
         },
         {
-          "@id": "ST610109.cwl"
-        },
-        {
-          "@id": "SS6102"
-        },
-        {
-          "@id": "SS6104"
-        },
-        {
-          "@id": "SS6113"
-        },
-        {
           "@id": "SS6118"
         },
         {
-          "@id": "ST610106.cwl"
+          "@id": "ST610109.cwl"
         }
       ],
       "mainEntity": {
@@ -172,9 +175,9 @@
       "url": "https://www.commonwl.org/"
     },
     {
-      "@id": "0000-0002-7822-0244",
+      "@id": "0000-0003-1019-7321",
       "@type": "Person",
-      "name": "Steven Gibbons",
+      "name": "Finn Løvholt",
       "affiliation": {
         "@id": "NGI"
       }
@@ -183,6 +186,51 @@
       "@id": "NGI",
       "@type": "Organization",
       "name": "Norwegian Geotechnical Institute"
+    },
+    {
+      "@id": "0000-0003-2882-1954",
+      "@type": "Person",
+      "name": "Valentina Magni",
+      "affiliation": {
+        "@id": "NGI"
+      }
+    },
+    {
+      "@id": "0000-0002-7822-0244",
+      "@type": "Person",
+      "name": "Steven Gibbons",
+      "affiliation": {
+        "@id": "NGI"
+      }
+    },
+    {
+      "@id": "0000-0002-6549-6268",
+      "@type": "Person",
+      "name": "Erlend Briseid Storrøsten",
+      "affiliation": {
+        "@id": "NGI"
+      }
+    },
+    {
+      "@id": "0000-0001-7617-7206",
+      "@type": "Person",
+      "name": "Roberto Tonini",
+      "affiliation": {
+        "@id": "INGV"
+      }
+    },
+    {
+      "@id": "INGV",
+      "@type": "Organization",
+      "name": "Istituto Nazionale di Geofisica e Vulcanologia (INGV)"
+    },
+    {
+      "@id": "0000-0003-4551-3339",
+      "@type": "Person",
+      "name": "Manuela Volpe",
+      "affiliation": {
+        "@id": "INGV"
+      }
     },
     {
       "@id": "0000-0003-0112-8412",
@@ -224,27 +272,6 @@
       "name": "Universidad de Málaga (UMA)"
     },
     {
-      "@id": "0000-0003-1019-7321",
-      "@type": "Person",
-      "name": "Finn Løvholt",
-      "affiliation": {
-        "@id": "NGI"
-      }
-    },
-    {
-      "@id": "0000-0003-4551-3339",
-      "@type": "Person",
-      "name": "Manuela Volpe",
-      "affiliation": {
-        "@id": "INGV"
-      }
-    },
-    {
-      "@id": "INGV",
-      "@type": "Organization",
-      "name": "Istituto Nazionale di Geofisica e Vulcanologia (INGV)"
-    },
-    {
       "@id": "WF6101.cwl",
       "@type": [
         "File",
@@ -254,24 +281,22 @@
       "name": "Probabilistic Tsunami Forecasting",
       "author": [
         {
-          "@id": "0000-0003-4551-3339"
+          "@id": "INGV"
         },
         {
-          "@id": "0000-0002-3010-8050"
-        }
-      ],
-      "creator": [
-        {
-          "@id": "0000-0003-4551-3339"
+          "@id": "NGI"
         },
         {
-          "@id": "0000-0002-3010-8050"
+          "@id": "UMA"
         }
       ],
       "programmingLanguage": {
         "@id": "https://about.workflowhub.eu/Workflow-RO-Crate/#cwl"
       },
       "input": [
+        {
+          "@id": "#DT6102->WF6101.cwl"
+        },
         {
           "@id": "#DT6103->WF6101.cwl"
         },
@@ -283,20 +308,11 @@
         },
         {
           "@id": "#DT6109->WF6101.cwl"
-        },
-        {
-          "@id": "#DT6101->WF6101.cwl"
-        },
-        {
-          "@id": "#DT6102->WF6101.cwl"
         }
       ],
       "output": [
         {
-          "@id": "#WF6101.cwl->DT6112"
-        },
-        {
-          "@id": "#WF6101.cwl->DT6113"
+          "@id": "#WF6101.cwl->DT6101"
         },
         {
           "@id": "#WF6101.cwl->DT6106"
@@ -312,56 +328,14 @@
         },
         {
           "@id": "#WF6101.cwl->DT6111"
+        },
+        {
+          "@id": "#WF6101.cwl->DT6112"
+        },
+        {
+          "@id": "#WF6101.cwl->DT6113"
         }
       ]
-    },
-    {
-      "@id": "DT6103",
-      "@type": "Dataset",
-      "name": "EIDA seismic data archive (European Integrated Data Archive)",
-      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/47b8f86d-b5c3-4791-b70e-c0cbee3be371"
-    },
-    {
-      "@id": "DT6113",
-      "@type": "Dataset",
-      "name": "Hazard visual products",
-      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/42ef6530-c082-457b-8426-80dab28f34e7"
-    },
-    {
-      "@id": "DT6106",
-      "@type": "Dataset",
-      "name": "List of scenarios (indices) with parameters",
-      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/18b1944f-dca9-469a-93b4-b66ae1afc952"
-    },
-    {
-      "@id": "DT6108",
-      "@type": "Dataset",
-      "name": "List of landslade scenarios",
-      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/64ff29df-aa2f-42e1-86d9-ca18ae56daac"
-    },
-    {
-      "@id": "DT6110",
-      "@type": "Dataset",
-      "name": "Tsunami intensity",
-      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/d19947f4-9538-4a07-8be1-b89cd87c6d49"
-    },
-    {
-      "@id": "sea_level_data",
-      "@type": "Dataset",
-      "name": "TODO",
-      "url": "TODO"
-    },
-    {
-      "@id": "gnss_data",
-      "@type": "Dataset",
-      "name": "TODO",
-      "url": "TODO"
-    },
-    {
-      "@id": "DT6101",
-      "@type": "Dataset",
-      "name": "Scenario Library",
-      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/8f11a5cf-cf82-4db2-a657-a4cfa530f639"
     },
     {
       "@id": "DT6102",
@@ -370,16 +344,10 @@
       "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/c55ff897-d8d5-4d51-97d5-1eaff3003ff2"
     },
     {
-      "@id": "DT6111",
+      "@id": "DT6103",
       "@type": "Dataset",
-      "name": "Ground displacements at selected POIs",
-      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/55516e7a-cea7-4f4d-90aa-7f6a1f6e0bc3"
-    },
-    {
-      "@id": "DT6107",
-      "@type": "Dataset",
-      "name": "List of probabilities",
-      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/0b7b8fe6-b1a5-4acf-a998-2675631f5020"
+      "name": "EIDA seismic data archive (European Integrated Data Archive)",
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/47b8f86d-b5c3-4791-b70e-c0cbee3be371"
     },
     {
       "@id": "DT6104",
@@ -400,102 +368,89 @@
       "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/71851ad5-7864-496e-8079-42884d9d3939"
     },
     {
+      "@id": "DT6101",
+      "@type": "Dataset",
+      "name": "Scenario Library",
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/8f11a5cf-cf82-4db2-a657-a4cfa530f639"
+    },
+    {
+      "@id": "DT6106",
+      "@type": "Dataset",
+      "name": "List of earthquake scenarios",
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/18b1944f-dca9-469a-93b4-b66ae1afc952"
+    },
+    {
+      "@id": "DT6107",
+      "@type": "Dataset",
+      "name": "List of probabilities",
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/0b7b8fe6-b1a5-4acf-a998-2675631f5020"
+    },
+    {
+      "@id": "DT6108",
+      "@type": "Dataset",
+      "name": "List of landslide scenarios",
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/64ff29df-aa2f-42e1-86d9-ca18ae56daac"
+    },
+    {
+      "@id": "DT6110",
+      "@type": "Dataset",
+      "name": "Tsunami intensities",
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/d19947f4-9538-4a07-8be1-b89cd87c6d49"
+    },
+    {
+      "@id": "DT6111",
+      "@type": "Dataset",
+      "name": "Ground deformation",
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/55516e7a-cea7-4f4d-90aa-7f6a1f6e0bc3"
+    },
+    {
       "@id": "DT6112",
       "@type": "Dataset",
-      "name": "Hazard curves",
+      "name": "Tsunami hazard curves",
       "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/9a9f8b23-55ef-4f05-aa2f-276ad84a579b"
     },
     {
+      "@id": "DT6113",
+      "@type": "Dataset",
+      "name": "Hazard visual products",
+      "url": "https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/42ef6530-c082-457b-8426-80dab28f34e7"
+    },
+    {
       "@id": "event_file",
+      "@type": "Dataset",
+      "name": "event_file",
+      "url": "TODO"
+    },
+    {
+      "@id": "sea_level_data",
       "@type": "Dataset",
       "name": "TODO",
       "url": "TODO"
     },
     {
-      "@id": "fault_model",
+      "@id": "gnss_data",
       "@type": "Dataset",
       "name": "TODO",
+      "url": "TODO"
+    },
+    {
+      "@id": "shakemaps",
+      "@type": "Dataset",
+      "name": "shakemaps",
       "url": "TODO"
     },
     {
       "@id": "misfit_output",
       "@type": "Dataset",
-      "name": "TODO",
+      "name": "misfit_output",
       "url": "TODO"
     },
     {
       "@id": "SS6101",
       "@type": "SoftwareSourceCode",
       "name": "ScPlayer: Scenario Player",
-      "description": "Simulates real-time processing by sending to the workflow pre-stored sensor data packets from the scenario library database. Each data packet will be sent at a corresponding scenario model time to simulate the real-time hazard event occurrence and processing (under development)",
+      "description": "Simulates real-time processing by sending to the workflow pre-stored sensor data packets, extracted from the input data DT6103, DT6104, and DT6105 and collected into the scenario library database. Each data packet will be sent at different time to simulate the real-time hazard event occurrence and processing (under development)",
       "url": "TODO: add the url to the software definition from the EPOS APIs"
-    },
-    {
-      "@id": "SS6103",
-      "@type": "SoftwareSourceCode",
-      "name": "ListenerSL",
-      "description": "Listens for new sea level data packet(s) and conveys it/them to the MisfitEvaluator #b07#. Optional processing/conversion of data ( (under discussion: to be compliant with the operational version in the monitoring room)",
-      "url": "TODO: add the url to the software definition from the EPOS APIs"
-    },
-    {
-      "@id": "SS6105",
-      "@type": "SoftwareSourceCode",
-      "name": "EnsembleManager",
-      "description": "Generates the list of earthquake scenarios (and associated probabilities) from incoming seismic parameters and long-term information; then updates the list based on further incoming sensor data level, GNSS) and possibly the misfit metrics derived by(seismic, sea level, GNSS) and possibly the misfit metrics derived by block #b07#.",
-      "url": "TODO: add the url to the software definition from the EPOS APIs"
-    },
-    {
-      "@id": "SS6114",
-      "@type": "SoftwareSourceCode",
-      "name": "Hazard Aggregator",
-      "description": "Aggregates hazard by using tsunami intensities from Scenario Modelling #b06# and scenario probabilities from Ensemble Manager #b05#. Scenario probabilities can be further updated based on the misfits from the Misfit Evaluator #b07#.",
-      "author": {
-        "@id": "0000-0003-4551-3339"
-      },
-      "license": "CC-BY 4.0",
-      "programmingLanguage": "Python",
-      "url": "TODO: add the url to the software definition from the EPOS APIs"
-    },
-    {
-      "@id": "SS6117",
-      "@type": "SoftwareSourceCode",
-      "name": "Landslide scenario manager",
-      "description": "Will combine shakemaps, slope, and soil information (if available) to compute a set of initial landslides volumes and associated conditional probabilities as input to the landslide source models.",
-      "author": [
-        {
-          "@id": "0000-0003-1019-7321"
-        },
-        {
-          "@id": "0000-0001-5581-2346"
-        }
-      ],
-      "license": "CC-BY 4.0",
-      "programmingLanguage": "Python",
-      "url": "TODO: add the url to the software definition from the EPOS APIs"
-    },
-    {
-      "@id": "ST610109.cwl",
-      "@type": [
-        "File",
-        "SoftwareSourceCode",
-        "ComputationalWorkflow"
-      ],
-      "name": "AL and Visualization",
-      "author": {
-        "@id": "TODO"
-      },
-      "creator": {
-        "@id": "TODO"
-      },
-      "programmingLanguage": {
-        "@id": "https://about.workflowhub.eu/Workflow-RO-Crate/#cwl"
-      },
-      "input": {
-        "@id": "#DT6112->ST610109.cwl"
-      },
-      "output": {
-        "@id": "#ST610109.cwl->DT6113"
-      }
     },
     {
       "@id": "SS6102",
@@ -505,29 +460,24 @@
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
+      "@id": "SS6103",
+      "@type": "SoftwareSourceCode",
+      "name": "ListenerSL",
+      "description": "Listens for new sea level data packet(s) and conveys it/them to the MisfitEvaluator.",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
       "@id": "SS6104",
       "@type": "SoftwareSourceCode",
       "name": "ListenerGNSS",
-      "description": "Listens for new data packet(s) from GNSS processing system and conveys it/them to the EnsembleManager #b05# and to the MisfitEvaluator #b07#.  (under discussion: to be compliant with bthe operational version in the monitoring room)",
+      "description": "Listens for new GNSS data packet(s) and conveys it/them to the MisfitEvaluator.",
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "SS6113",
+      "@id": "SS6105",
       "@type": "SoftwareSourceCode",
-      "name": "Misfit Evaluator",
-      "description": "TODO",
-      "author": {
-        "@id": "0000-0001-9836-8716"
-      },
-      "license": "TBD (probably GPL-3.0-or-later)",
-      "programmingLanguage": "Python",
-      "url": "TODO: add the url to the software definition from the EPOS APIs"
-    },
-    {
-      "@id": "SS6118",
-      "@type": "SoftwareSourceCode",
-      "name": "Earthquake modeling",
-      "description": "This block is considered as an alternative or accompaniment to WP7 in providing advanced source parameters to DTC-T1. E.g., shakemaps for landslide simulations. (to be developed, under discussion)",
+      "name": "EnsembleManager",
+      "description": "Generates the list of earthquake scenarios (and associated probabilities) from incoming seismic parameters and long-term information; then updates the list based on further incoming data",
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
@@ -539,9 +489,6 @@
       ],
       "name": "Scenario Modeling",
       "author": {
-        "@id": "TODO"
-      },
-      "creator": {
         "@id": "TODO"
       },
       "programmingLanguage": {
@@ -571,13 +518,107 @@
       ]
     },
     {
+      "@id": "SS6113",
+      "@type": "SoftwareSourceCode",
+      "name": "Misfit Evaluator",
+      "description": "Module computing the misfit between data and simulation outputs",
+      "author": {
+        "@id": "0000-0001-9836-8716"
+      },
+      "license": "TBD (probably GPL-3.0-or-later)",
+      "programmingLanguage": "Python",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6114",
+      "@type": "SoftwareSourceCode",
+      "name": "Hazard Aggregator",
+      "description": "Aggregates hazard by using tsunami intensities from Scenario Modelling and scenario probabilities from Ensemble Manager. Scenario probabilities can be further updated based on the misfits from the Misfit Evaluator.",
+      "author": {
+        "@id": "0000-0003-4551-3339"
+      },
+      "license": "CC-BY 4.0",
+      "programmingLanguage": "Python",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6117",
+      "@type": "SoftwareSourceCode",
+      "name": "Landslide scenario manager",
+      "description": "Will combine shakemaps, slope, and soil information (if available) to compute a set of initial landslides volumes and associated conditional probabilities as input to the landslide source models.",
+      "author": [
+        {
+          "@id": "0000-0003-1019-7321"
+        },
+        {
+          "@id": "0000-0002-7822-0244"
+        },
+        {
+          "@id": "0000-0002-6549-6268"
+        }
+      ],
+      "license": "CC-BY 4.0",
+      "programmingLanguage": "Python",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "SS6118",
+      "@type": "SoftwareSourceCode",
+      "name": "Earthquake modeling",
+      "description": "Module to provide advanced source parameters, i.e. shakemaps retrieved from GNSS data, for landslide simulations.",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
+      "@id": "ST610109.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "name": "AL and Visualization",
+      "author": [
+        {
+          "@id": "0000-0003-4551-3339"
+        },
+        {
+          "@id": "0000-0001-7617-7206"
+        },
+        {
+          "@id": "0000-0003-2882-1954"
+        }
+      ],
+      "programmingLanguage": {
+        "@id": "https://about.workflowhub.eu/Workflow-RO-Crate/#cwl"
+      },
+      "input": {
+        "@id": "#DT6112->ST610109.cwl"
+      },
+      "output": {
+        "@id": "#ST610109.cwl->DT6113"
+      }
+    },
+    {
+      "@id": "#DT6102->WF6101.cwl",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "Long-term tsunami hazard model for the NEAM region (NEAMTHM18)",
+      "workExample": {
+        "@id": "DT6102"
+      },
+      "name": "DT6102",
+      "valueRequired": true
+    },
+    {
       "@id": "#DT6103->WF6101.cwl",
       "@type": "FormalParameter",
       "additionalType": "Dataset",
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Seismic waveforms and station metadata",
       "workExample": {
         "@id": "DT6103"
       },
@@ -591,7 +632,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Global station monitoring service for real time sea level measuring",
       "workExample": {
         "@id": "DT6104"
       },
@@ -605,7 +646,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Observational data of coseismic displacement",
       "workExample": {
         "@id": "DT6105"
       },
@@ -619,67 +660,11 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Computational grids for numerical simulations",
       "workExample": {
         "@id": "DT6109"
       },
       "name": "DT6109",
-      "valueRequired": true
-    },
-    {
-      "@id": "#DT6101->WF6101.cwl",
-      "@type": "FormalParameter",
-      "additionalType": "Dataset",
-      "conformsTo": {
-        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
-      },
-      "description": "TODO",
-      "workExample": {
-        "@id": "DT6101"
-      },
-      "name": "DT6101",
-      "valueRequired": true
-    },
-    {
-      "@id": "#DT6102->WF6101.cwl",
-      "@type": "FormalParameter",
-      "additionalType": "Dataset",
-      "conformsTo": {
-        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
-      },
-      "description": "TODO",
-      "workExample": {
-        "@id": "DT6102"
-      },
-      "name": "DT6102",
-      "valueRequired": true
-    },
-    {
-      "@id": "#WF6101.cwl->DT6112",
-      "@type": "FormalParameter",
-      "additionalType": "Dataset",
-      "conformsTo": {
-        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
-      },
-      "description": "TODO",
-      "workExample": {
-        "@id": "DT6112"
-      },
-      "name": "DT6112",
-      "valueRequired": true
-    },
-    {
-      "@id": "#WF6101.cwl->DT6113",
-      "@type": "FormalParameter",
-      "additionalType": "Dataset",
-      "conformsTo": {
-        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
-      },
-      "description": "TODO",
-      "workExample": {
-        "@id": "DT6113"
-      },
-      "name": "DT6113",
       "valueRequired": true
     },
     {
@@ -689,7 +674,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "List of earthquake scenarios",
       "workExample": {
         "@id": "DT6106"
       },
@@ -703,7 +688,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "List of scenario probabilities",
       "workExample": {
         "@id": "DT6107"
       },
@@ -717,7 +702,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "List of landslide scenarios",
       "workExample": {
         "@id": "DT6108"
       },
@@ -731,7 +716,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Tsunami intensities",
       "workExample": {
         "@id": "DT6110"
       },
@@ -745,11 +730,53 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Ground deformation",
       "workExample": {
         "@id": "DT6111"
       },
       "name": "DT6111",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6112",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "Tsunami hazard curves",
+      "workExample": {
+        "@id": "DT6112"
+      },
+      "name": "DT6112",
+      "valueRequired": true
+    },
+    {
+      "@id": "#WF6101.cwl->DT6113",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "Hazard visual products",
+      "workExample": {
+        "@id": "DT6113"
+      },
+      "name": "DT6113",
+      "valueRequired": true
+    },
+    {
+      "@id": "#DT6101->WF6101.cwl",
+      "@type": "FormalParameter",
+      "additionalType": "Dataset",
+      "conformsTo": {
+        "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
+      },
+      "description": "Collection of observational data for the processing event",
+      "workExample": {
+        "@id": "DT6101"
+      },
+      "name": "DT6101",
       "valueRequired": true
     },
     {
@@ -759,7 +786,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Tsunami hazard curves",
       "workExample": {
         "@id": "DT6112"
       },
@@ -773,19 +800,12 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Hazard visual products",
       "workExample": {
         "@id": "DT6113"
       },
       "name": "DT6113",
       "valueRequired": true
-    },
-    {
-      "@id": "SS6116",
-      "@type": "SoftwareSourceCode",
-      "name": "Visualization",
-      "description": "TODO",
-      "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
       "@id": "SS6115",
@@ -795,9 +815,16 @@
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
+      "@id": "SS6116",
+      "@type": "SoftwareSourceCode",
+      "name": "Visualization",
+      "description": "Production of hazard maps for visualization",
+      "url": "TODO: add the url to the software definition from the EPOS APIs"
+    },
+    {
       "@id": "alert_levels",
       "@type": "Dataset",
-      "name": "TODO",
+      "name": "Values of alerts levels at POIs and forecast points",
       "url": "TODO"
     },
     {
@@ -807,7 +834,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Computational grids for numerical simulations",
       "workExample": {
         "@id": "DT6109"
       },
@@ -821,7 +848,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Long-term tsunami hazard model for the NEAM region (NEAMTHM18)",
       "workExample": {
         "@id": "DT6102"
       },
@@ -835,7 +862,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "List of earthquake scenarios",
       "workExample": {
         "@id": "DT6106"
       },
@@ -849,7 +876,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "List of landslide scenarios",
       "workExample": {
         "@id": "DT6108"
       },
@@ -863,7 +890,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Tsunami intensities",
       "workExample": {
         "@id": "DT6110"
       },
@@ -877,7 +904,7 @@
       "conformsTo": {
         "@id": "https://bioschemas.org/profiles/FormalParameter/1.0-RELEASE"
       },
-      "description": "TODO",
+      "description": "Ground deformation",
       "workExample": {
         "@id": "DT6111"
       },
@@ -888,7 +915,8 @@
       "@id": "SS6112",
       "@type": "SoftwareSourceCode",
       "name": "Source-to-wave filter",
-      "description": "Time dependent source to wave model filter WGS84, variable coordinates",
+      "description": "Interface module to integrate source models to tsunami models",
+      "programmingLanguage": "Python",
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
@@ -976,15 +1004,15 @@
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {
-      "@id": "deformation",
+      "@id": "dynamic deformation",
       "@type": "Dataset",
-      "name": "TODO",
+      "name": "dynamic deformation",
       "url": "TODO"
     },
     {
-      "@id": "tbd",
+      "@id": "dynamic landslide deformation",
       "@type": "Dataset",
-      "name": "TODO",
+      "name": "dynamic landslide deformation",
       "url": "TODO"
     },
     {
@@ -1062,13 +1090,15 @@ table.table {
             <td style='text-align:left'><span>Dataset</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Workflow aiming at computing the probability of exceedance of given tsunami intensities at given locations, conditional upon an occurring tsunamigenic event. Presently made by a master python code managing the execution of different steps + a suite of python codes for each step + a few bash scripts for job submission to HPC resources. Other softwares described as separate DA are also to be considered part of the workflow.</span></td>
+            <td style='text-align:left'><span>Workflow aiming at computing the probability of exceedance of given tsunami intensities at given locations, conditional upon an occurring tsunamigenic event. Presently made by a master python code managing the execution of different steps + a suite of python codes for each step + bash scripts for job submission to HPC resources. Other softwares described as separate DA are also to be considered part of the workflow.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#0000-0003-4551-3339">Manuela Volpe</a></li>
+                        <li><a href="#INGV">Istituto Nazionale di Geofisica e Vulcanologia (INGV)</a></li>
                         
-                        <li><a href="#0000-0002-3010-8050">Jorge Macias</a></li>
+                        <li><a href="#NGI">Norwegian Geotechnical Institute</a></li>
+                        
+                        <li><a href="#UMA">Universidad de Málaga (UMA)</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
@@ -1087,27 +1117,9 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#WF6101.cwl">Probabilistic Tsunami Forecasting</a></li>
                         
-                        <li><a href="#DT6103">EIDA seismic data archive (European Integrated Data Archive)</a></li>
-                        
-                        <li><a href="#DT6113">Hazard visual products</a></li>
-                        
-                        <li><a href="#DT6106">List of scenarios (indices) with parameters</a></li>
-                        
-                        <li><a href="#DT6108">List of landslade scenarios</a></li>
-                        
-                        <li><a href="#DT6110">Tsunami intensity</a></li>
-                        
-                        <li><a href="#sea_level_data">TODO</a></li>
-                        
-                        <li><a href="#gnss_data">TODO</a></li>
-                        
-                        <li><a href="#DT6101">Scenario Library</a></li>
-                        
                         <li><a href="#DT6102">NEAMTHM18</a></li>
                         
-                        <li><a href="#DT6111">Ground displacements at selected POIs</a></li>
-                        
-                        <li><a href="#DT6107">List of probabilities</a></li>
+                        <li><a href="#DT6103">EIDA seismic data archive (European Integrated Data Archive)</a></li>
                         
                         <li><a href="#DT6104">SLSMF sea level data (Sea Level Station Monitoring Facility)</a></li>
                         
@@ -1115,35 +1127,53 @@ table.table {
                         
                         <li><a href="#DT6109">SimGrids</a></li>
                         
-                        <li><a href="#DT6112">Hazard curves</a></li>
+                        <li><a href="#DT6101">Scenario Library</a></li>
                         
-                        <li><a href="#event_file">TODO</a></li>
+                        <li><a href="#DT6106">List of earthquake scenarios</a></li>
                         
-                        <li><a href="#fault_model">TODO</a></li>
+                        <li><a href="#DT6107">List of probabilities</a></li>
                         
-                        <li><a href="#misfit_output">TODO</a></li>
+                        <li><a href="#DT6108">List of landslide scenarios</a></li>
+                        
+                        <li><a href="#DT6110">Tsunami intensities</a></li>
+                        
+                        <li><a href="#DT6111">Ground deformation</a></li>
+                        
+                        <li><a href="#DT6112">Tsunami hazard curves</a></li>
+                        
+                        <li><a href="#DT6113">Hazard visual products</a></li>
+                        
+                        <li><a href="#event_file">event_file</a></li>
+                        
+                        <li><a href="#sea_level_data">TODO</a></li>
+                        
+                        <li><a href="#gnss_data">TODO</a></li>
+                        
+                        <li><a href="#shakemaps">shakemaps</a></li>
+                        
+                        <li><a href="#misfit_output">misfit_output</a></li>
                         
                         <li><a href="#SS6101">ScPlayer: Scenario Player</a></li>
                         
+                        <li><a href="#SS6102">ListenerEQ</a></li>
+                        
                         <li><a href="#SS6103">ListenerSL</a></li>
                         
+                        <li><a href="#SS6104">ListenerGNSS</a></li>
+                        
                         <li><a href="#SS6105">EnsembleManager</a></li>
+                        
+                        <li><a href="#ST610106.cwl">Scenario Modeling</a></li>
+                        
+                        <li><a href="#SS6113">Misfit Evaluator</a></li>
                         
                         <li><a href="#SS6114">Hazard Aggregator</a></li>
                         
                         <li><a href="#SS6117">Landslide scenario manager</a></li>
                         
-                        <li><a href="#ST610109.cwl">AL and Visualization</a></li>
-                        
-                        <li><a href="#SS6102">ListenerEQ</a></li>
-                        
-                        <li><a href="#SS6104">ListenerGNSS</a></li>
-                        
-                        <li><a href="#SS6113">Misfit Evaluator</a></li>
-                        
                         <li><a href="#SS6118">Earthquake modeling</a></li>
                         
-                        <li><a href="#ST610106.cwl">Scenario Modeling</a></li>
+                        <li><a href="#ST610109.cwl">AL and Visualization</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">mainEntity<span>&nbsp;</span><a href="http://schema.org/mainEntity">[?]</a></th>
@@ -1157,78 +1187,111 @@ table.table {
             </div>
         <hr/><br/><br/>
             <div>
-                <h3> Manuela Volpe</h3>
+                <h3> Istituto Nazionale di Geofisica e Vulcanologia (INGV)</h3>
                 
                 
                 
                 
-        <div id="0000-0003-4551-3339">
+        <div id="INGV">
             
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>0000-0003-4551-3339</span></td>
+            <td style='text-align:left'><span>INGV</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Manuela Volpe</span></td>
+            <td style='text-align:left'><span>Istituto Nazionale di Geofisica e Vulcanologia (INGV)</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Person</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
-            <td style='text-align:left'><a href="#INGV">Istituto Nazionale di Geofisica e Vulcanologia (INGV)</a></td>
+            <td style='text-align:left'><span>Organization</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#0000-0001-7617-7206">Roberto Tonini</a></li>
+                        
+                        <li><a href="#0000-0003-4551-3339">Manuela Volpe</a></li>
+                        </ul></td>
+            </tr><tr>
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#./">Probabilistic Tsunami Forecasting</a></li>
                         
                         <li><a href="#WF6101.cwl">Probabilistic Tsunami Forecasting</a></li>
-                        
-                        <li><a href="#SS6114">Hazard Aggregator</a></li>
                         </ul></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'><a href="#WF6101.cwl">Probabilistic Tsunami Forecasting</a></td>
             </tr></tbody>
             </table>
         </div>
             </div>
         <hr/><br/><br/>
             <div>
-                <h3> Jorge Macias</h3>
+                <h3> Norwegian Geotechnical Institute</h3>
                 
                 
                 
                 
-        <div id="0000-0002-3010-8050">
+        <div id="NGI">
             
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>0000-0002-3010-8050</span></td>
+            <td style='text-align:left'><span>NGI</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Jorge Macias</span></td>
+            <td style='text-align:left'><span>Norwegian Geotechnical Institute</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Person</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
-            <td style='text-align:left'><a href="#UMA">Universidad de Málaga (UMA)</a></td>
+            <td style='text-align:left'><span>Organization</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#0000-0003-1019-7321">Finn Løvholt</a></li>
+                        
+                        <li><a href="#0000-0003-2882-1954">Valentina Magni</a></li>
+                        
+                        <li><a href="#0000-0002-7822-0244">Steven Gibbons</a></li>
+                        
+                        <li><a href="#0000-0002-6549-6268">Erlend Briseid Storrøsten</a></li>
+                        </ul></td>
+            </tr><tr>
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#./">Probabilistic Tsunami Forecasting</a></li>
                         
                         <li><a href="#WF6101.cwl">Probabilistic Tsunami Forecasting</a></li>
-                        
-                        <li><a href="#SS6107">Tsunami-HySEA</a></li>
-                        
-                        <li><a href="#SS6108">Landslide-HySea</a></li>
                         </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> Universidad de Málaga (UMA)</h3>
+                
+                
+                
+                
+        <div id="UMA">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>UMA</span></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'><a href="#WF6101.cwl">Probabilistic Tsunami Forecasting</a></td>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Universidad de Málaga (UMA)</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Organization</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
+            <td style='text-align:left'><a href="#0000-0002-3010-8050">Jorge Macias</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#./">Probabilistic Tsunami Forecasting</a></li>
+                        
+                        <li><a href="#WF6101.cwl">Probabilistic Tsunami Forecasting</a></li>
+                        </ul></td>
             </tr></tbody>
             </table>
         </div>
@@ -1352,16 +1415,11 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#0000-0003-4551-3339">Manuela Volpe</a></li>
+                        <li><a href="#INGV">Istituto Nazionale di Geofisica e Vulcanologia (INGV)</a></li>
                         
-                        <li><a href="#0000-0002-3010-8050">Jorge Macias</a></li>
-                        </ul></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#0000-0003-4551-3339">Manuela Volpe</a></li>
+                        <li><a href="#NGI">Norwegian Geotechnical Institute</a></li>
                         
-                        <li><a href="#0000-0002-3010-8050">Jorge Macias</a></li>
+                        <li><a href="#UMA">Universidad de Málaga (UMA)</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
@@ -1369,6 +1427,8 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">input<span>&nbsp;</span><a href="https://bioschemas.org/ComputationalWorkflow#input">[?]</a></th>
             <td style='text-align:left'><ul>
+                        <li><a href="#%23DT6102-%3EWF6101.cwl">DT6102</a></li>
+                        
                         <li><a href="#%23DT6103-%3EWF6101.cwl">DT6103</a></li>
                         
                         <li><a href="#%23DT6104-%3EWF6101.cwl">DT6104</a></li>
@@ -1376,17 +1436,11 @@ table.table {
                         <li><a href="#%23DT6105-%3EWF6101.cwl">DT6105</a></li>
                         
                         <li><a href="#%23DT6109-%3EWF6101.cwl">DT6109</a></li>
-                        
-                        <li><a href="#%23DT6101-%3EWF6101.cwl">DT6101</a></li>
-                        
-                        <li><a href="#%23DT6102-%3EWF6101.cwl">DT6102</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">output<span>&nbsp;</span><a href="https://bioschemas.org/ComputationalWorkflow#output">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#%23WF6101.cwl-%3EDT6112">DT6112</a></li>
-                        
-                        <li><a href="#%23WF6101.cwl-%3EDT6113">DT6113</a></li>
+                        <li>#WF6101.cwl->DT6101</li>
                         
                         <li><a href="#%23WF6101.cwl-%3EDT6106">DT6106</a></li>
                         
@@ -1397,6 +1451,10 @@ table.table {
                         <li><a href="#%23WF6101.cwl-%3EDT6110">DT6110</a></li>
                         
                         <li><a href="#%23WF6101.cwl-%3EDT6111">DT6111</a></li>
+                        
+                        <li><a href="#%23WF6101.cwl-%3EDT6112">DT6112</a></li>
+                        
+                        <li><a href="#%23WF6101.cwl-%3EDT6113">DT6113</a></li>
                         </ul></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
@@ -1404,272 +1462,6 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">mainEntity<span>&nbsp;</span><a href="http://schema.org/mainEntity">[?]</a></th>
             <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> EIDA seismic data archive (European Integrated Data Archive)</h3>
-                
-                
-                
-                
-        <div id="DT6103">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>DT6103</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>EIDA seismic data archive (European Integrated Data Archive)</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/47b8f86d-b5c3-4791-b70e-c0cbee3be371">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/47b8f86d-b5c3-4791-b70e-c0cbee3be371</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
-            <td style='text-align:left'><a href="#%23DT6103-%3EWF6101.cwl">DT6103</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> Hazard visual products</h3>
-                
-                
-                
-                
-        <div id="DT6113">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>DT6113</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Hazard visual products</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/42ef6530-c082-457b-8426-80dab28f34e7">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/42ef6530-c082-457b-8426-80dab28f34e7</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#%23WF6101.cwl-%3EDT6113">DT6113</a></li>
-                        
-                        <li><a href="#%23ST610109.cwl-%3EDT6113">DT6113</a></li>
-                        </ul></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> List of scenarios (indices) with parameters</h3>
-                
-                
-                
-                
-        <div id="DT6106">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>DT6106</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>List of scenarios (indices) with parameters</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/18b1944f-dca9-469a-93b4-b66ae1afc952">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/18b1944f-dca9-469a-93b4-b66ae1afc952</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#%23WF6101.cwl-%3EDT6106">DT6106</a></li>
-                        
-                        <li><a href="#%23DT6106-%3EST610106.cwl">DT6106</a></li>
-                        </ul></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> List of landslade scenarios</h3>
-                
-                
-                
-                
-        <div id="DT6108">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>DT6108</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>List of landslade scenarios</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/64ff29df-aa2f-42e1-86d9-ca18ae56daac">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/64ff29df-aa2f-42e1-86d9-ca18ae56daac</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#%23WF6101.cwl-%3EDT6108">DT6108</a></li>
-                        
-                        <li><a href="#%23DT6108-%3EST610106.cwl">DT6108</a></li>
-                        </ul></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> Tsunami intensity</h3>
-                
-                
-                
-                
-        <div id="DT6110">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>DT6110</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Tsunami intensity</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/d19947f4-9538-4a07-8be1-b89cd87c6d49">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/d19947f4-9538-4a07-8be1-b89cd87c6d49</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#%23WF6101.cwl-%3EDT6110">DT6110</a></li>
-                        
-                        <li><a href="#%23ST610106.cwl-%3EDT6110">DT6110</a></li>
-                        </ul></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> TODO</h3>
-                
-                
-                
-                
-        <div id="sea_level_data">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>sea_level_data</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>TODO</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><span>TODO</span></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> TODO</h3>
-                
-                
-                
-                
-        <div id="gnss_data">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>gnss_data</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>TODO</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><span>TODO</span></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> Scenario Library</h3>
-                
-                
-                
-                
-        <div id="DT6101">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>DT6101</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Scenario Library</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/8f11a5cf-cf82-4db2-a657-a4cfa530f639">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/8f11a5cf-cf82-4db2-a657-a4cfa530f639</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
-            <td style='text-align:left'><a href="#%23DT6101-%3EWF6101.cwl">DT6101</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1712,68 +1504,32 @@ table.table {
             </div>
         <hr/><br/><br/>
             <div>
-                <h3> Ground displacements at selected POIs</h3>
+                <h3> EIDA seismic data archive (European Integrated Data Archive)</h3>
                 
                 
                 
                 
-        <div id="DT6111">
+        <div id="DT6103">
             
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>DT6111</span></td>
+            <td style='text-align:left'><span>DT6103</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Ground displacements at selected POIs</span></td>
+            <td style='text-align:left'><span>EIDA seismic data archive (European Integrated Data Archive)</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Dataset</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/55516e7a-cea7-4f4d-90aa-7f6a1f6e0bc3">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/55516e7a-cea7-4f4d-90aa-7f6a1f6e0bc3</a></td>
+            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/47b8f86d-b5c3-4791-b70e-c0cbee3be371">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/47b8f86d-b5c3-4791-b70e-c0cbee3be371</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#%23WF6101.cwl-%3EDT6111">DT6111</a></li>
-                        
-                        <li><a href="#%23ST610106.cwl-%3EDT6111">DT6111</a></li>
-                        </ul></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> List of probabilities</h3>
-                
-                
-                
-                
-        <div id="DT6107">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>DT6107</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>List of probabilities</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>Dataset</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/0b7b8fe6-b1a5-4acf-a998-2675631f5020">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/0b7b8fe6-b1a5-4acf-a998-2675631f5020</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
-            <td style='text-align:left'><a href="#%23WF6101.cwl-%3EDT6107">DT6107</a></td>
+            <td style='text-align:left'><a href="#%23DT6103-%3EWF6101.cwl">DT6103</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1880,7 +1636,215 @@ table.table {
             </div>
         <hr/><br/><br/>
             <div>
-                <h3> Hazard curves</h3>
+                <h3> Scenario Library</h3>
+                
+                
+                
+                
+        <div id="DT6101">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>DT6101</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Scenario Library</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/8f11a5cf-cf82-4db2-a657-a4cfa530f639">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/8f11a5cf-cf82-4db2-a657-a4cfa530f639</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
+            <td style='text-align:left'><a href="#%23DT6101-%3EWF6101.cwl">DT6101</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> List of earthquake scenarios</h3>
+                
+                
+                
+                
+        <div id="DT6106">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>DT6106</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>List of earthquake scenarios</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/18b1944f-dca9-469a-93b4-b66ae1afc952">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/18b1944f-dca9-469a-93b4-b66ae1afc952</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23WF6101.cwl-%3EDT6106">DT6106</a></li>
+                        
+                        <li><a href="#%23DT6106-%3EST610106.cwl">DT6106</a></li>
+                        </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> List of probabilities</h3>
+                
+                
+                
+                
+        <div id="DT6107">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>DT6107</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>List of probabilities</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/0b7b8fe6-b1a5-4acf-a998-2675631f5020">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/0b7b8fe6-b1a5-4acf-a998-2675631f5020</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
+            <td style='text-align:left'><a href="#%23WF6101.cwl-%3EDT6107">DT6107</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> List of landslide scenarios</h3>
+                
+                
+                
+                
+        <div id="DT6108">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>DT6108</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>List of landslide scenarios</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/64ff29df-aa2f-42e1-86d9-ca18ae56daac">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/64ff29df-aa2f-42e1-86d9-ca18ae56daac</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23WF6101.cwl-%3EDT6108">DT6108</a></li>
+                        
+                        <li><a href="#%23DT6108-%3EST610106.cwl">DT6108</a></li>
+                        </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> Tsunami intensities</h3>
+                
+                
+                
+                
+        <div id="DT6110">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>DT6110</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Tsunami intensities</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/d19947f4-9538-4a07-8be1-b89cd87c6d49">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/d19947f4-9538-4a07-8be1-b89cd87c6d49</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23WF6101.cwl-%3EDT6110">DT6110</a></li>
+                        
+                        <li><a href="#%23ST610106.cwl-%3EDT6110">DT6110</a></li>
+                        </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> Ground deformation</h3>
+                
+                
+                
+                
+        <div id="DT6111">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>DT6111</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Ground deformation</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/55516e7a-cea7-4f4d-90aa-7f6a1f6e0bc3">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/55516e7a-cea7-4f4d-90aa-7f6a1f6e0bc3</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23WF6101.cwl-%3EDT6111">DT6111</a></li>
+                        
+                        <li><a href="#%23ST610106.cwl-%3EDT6111">DT6111</a></li>
+                        </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> Tsunami hazard curves</h3>
                 
                 
                 
@@ -1893,7 +1857,7 @@ table.table {
             <td style='text-align:left'><span>DT6112</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Hazard curves</span></td>
+            <td style='text-align:left'><span>Tsunami hazard curves</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Dataset</span></td>
@@ -1916,7 +1880,43 @@ table.table {
             </div>
         <hr/><br/><br/>
             <div>
-                <h3> TODO</h3>
+                <h3> Hazard visual products</h3>
+                
+                
+                
+                
+        <div id="DT6113">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>DT6113</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Hazard visual products</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><a href="https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/42ef6530-c082-457b-8426-80dab28f34e7">https://ics-c.epos-ip.org/development/k8s-epos-deploy/dt-geo/api/v1/resources/details/42ef6530-c082-457b-8426-80dab28f34e7</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">workExample<span>&nbsp;</span><a href="http://schema.org/workExample">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23WF6101.cwl-%3EDT6113">DT6113</a></li>
+                        
+                        <li><a href="#%23ST610109.cwl-%3EDT6113">DT6113</a></li>
+                        </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> event_file</h3>
                 
                 
                 
@@ -1929,7 +1929,7 @@ table.table {
             <td style='text-align:left'><span>event_file</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>TODO</span></td>
+            <td style='text-align:left'><span>event_file</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Dataset</span></td>
@@ -1950,12 +1950,12 @@ table.table {
                 
                 
                 
-        <div id="fault_model">
+        <div id="sea_level_data">
             
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>fault_model</span></td>
+            <td style='text-align:left'><span>sea_level_data</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>TODO</span></td>
@@ -1975,6 +1975,64 @@ table.table {
         <hr/><br/><br/>
             <div>
                 <h3> TODO</h3>
+                
+                
+                
+                
+        <div id="gnss_data">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>gnss_data</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>TODO</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><span>TODO</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> shakemaps</h3>
+                
+                
+                
+                
+        <div id="shakemaps">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>shakemaps</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>shakemaps</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><span>TODO</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> misfit_output</h3>
                 
                 
                 
@@ -1987,7 +2045,7 @@ table.table {
             <td style='text-align:left'><span>misfit_output</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>TODO</span></td>
+            <td style='text-align:left'><span>misfit_output</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>Dataset</span></td>
@@ -2022,7 +2080,39 @@ table.table {
             <td style='text-align:left'><span>SoftwareSourceCode</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Simulates real-time processing by sending to the workflow pre-stored sensor data packets from the scenario library database. Each data packet will be sent at a corresponding scenario model time to simulate the real-time hazard event occurrence and processing (under development)</span></td>
+            <td style='text-align:left'><span>Simulates real-time processing by sending to the workflow pre-stored sensor data packets, extracted from the input data DT6103, DT6104, and DT6105 and collected into the scenario library database. Each data packet will be sent at different time to simulate the real-time hazard event occurrence and processing (under development)</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> ListenerEQ</h3>
+                
+                
+                
+                
+        <div id="SS6102">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>SS6102</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>ListenerEQ</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>SoftwareSourceCode</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>Listens for new EQ parameter message and conveys it to the EnsembleManager #b05#. Optional processing/conversion of data (under discussion: to be compliant with the operational version in the monitoring room)</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
             <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
@@ -2054,7 +2144,39 @@ table.table {
             <td style='text-align:left'><span>SoftwareSourceCode</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Listens for new sea level data packet(s) and conveys it/them to the MisfitEvaluator #b07#. Optional processing/conversion of data ( (under discussion: to be compliant with the operational version in the monitoring room)</span></td>
+            <td style='text-align:left'><span>Listens for new sea level data packet(s) and conveys it/them to the MisfitEvaluator.</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> ListenerGNSS</h3>
+                
+                
+                
+                
+        <div id="SS6104">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>SS6104</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>ListenerGNSS</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>SoftwareSourceCode</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>Listens for new GNSS data packet(s) and conveys it/them to the MisfitEvaluator.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
             <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
@@ -2086,7 +2208,104 @@ table.table {
             <td style='text-align:left'><span>SoftwareSourceCode</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Generates the list of earthquake scenarios (and associated probabilities) from incoming seismic parameters and long-term information; then updates the list based on further incoming sensor data level, GNSS) and possibly the misfit metrics derived by(seismic, sea level, GNSS) and possibly the misfit metrics derived by block #b07#.</span></td>
+            <td style='text-align:left'><span>Generates the list of earthquake scenarios (and associated probabilities) from incoming seismic parameters and long-term information; then updates the list based on further incoming data</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3><a href="ST610106.cwl">⬇️ Download: </a> Scenario Modeling</h3>
+                
+                
+                
+                
+        <div id="ST610106.cwl">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>ST610106.cwl</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Scenario Modeling</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>SoftwareSourceCode</span></li>
+                        
+                        <li><span>ComputationalWorkflow</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'>TODO</td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
+            <td style='text-align:left'><a href="https://about.workflowhub.eu/Workflow-RO-Crate/#cwl">https://about.workflowhub.eu/Workflow-RO-Crate/#cwl</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">input<span>&nbsp;</span><a href="https://bioschemas.org/ComputationalWorkflow#input">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23DT6109-%3EST610106.cwl">DT6109</a></li>
+                        
+                        <li><a href="#%23DT6102-%3EST610106.cwl">DT6102</a></li>
+                        
+                        <li><a href="#%23DT6106-%3EST610106.cwl">DT6106</a></li>
+                        
+                        <li><a href="#%23DT6108-%3EST610106.cwl">DT6108</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">output<span>&nbsp;</span><a href="https://bioschemas.org/ComputationalWorkflow#output">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23ST610106.cwl-%3EDT6110">DT6110</a></li>
+                        
+                        <li><a href="#%23ST610106.cwl-%3EDT6111">DT6111</a></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> Misfit Evaluator</h3>
+                
+                
+                
+                
+        <div id="SS6113">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>SS6113</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Misfit Evaluator</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>SoftwareSourceCode</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>Module computing the misfit between data and simulation outputs</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><a href="#0000-0001-9836-8716">Jörn Behrens</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
+            <td style='text-align:left'><span>TBD (probably GPL-3.0-or-later)</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
+            <td style='text-align:left'><span>Python</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
             <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
@@ -2118,7 +2337,7 @@ table.table {
             <td style='text-align:left'><span>SoftwareSourceCode</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Aggregates hazard by using tsunami intensities from Scenario Modelling #b06# and scenario probabilities from Ensemble Manager #b05#. Scenario probabilities can be further updated based on the misfits from the Misfit Evaluator #b07#.</span></td>
+            <td style='text-align:left'><span>Aggregates hazard by using tsunami intensities from Scenario Modelling and scenario probabilities from Ensemble Manager. Scenario probabilities can be further updated based on the misfits from the Misfit Evaluator.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><a href="#0000-0003-4551-3339">Manuela Volpe</a></td>
@@ -2165,7 +2384,9 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#0000-0003-1019-7321">Finn Løvholt</a></li>
                         
-                        <li>0000-0001-5581-2346</li>
+                        <li><a href="#0000-0002-7822-0244">Steven Gibbons</a></li>
+                        
+                        <li><a href="#0000-0002-6549-6268">Erlend Briseid Storrøsten</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
@@ -2173,6 +2394,38 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
             <td style='text-align:left'><span>Python</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
+            <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3> Earthquake modeling</h3>
+                
+                
+                
+                
+        <div id="SS6118">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>SS6118</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Earthquake modeling</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>SoftwareSourceCode</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>Module to provide advanced source parameters, i.e. shakemaps retrieved from GNSS data, for landslide simulations.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
             <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
@@ -2210,10 +2463,13 @@ table.table {
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
-            <td style='text-align:left'>TODO</td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'>TODO</td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#0000-0003-4551-3339">Manuela Volpe</a></li>
+                        
+                        <li><a href="#0000-0001-7617-7206">Roberto Tonini</a></li>
+                        
+                        <li><a href="#0000-0003-2882-1954">Valentina Magni</a></li>
+                        </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
             <td style='text-align:left'><a href="https://about.workflowhub.eu/Workflow-RO-Crate/#cwl">https://about.workflowhub.eu/Workflow-RO-Crate/#cwl</a></td>
@@ -2223,202 +2479,6 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">output<span>&nbsp;</span><a href="https://bioschemas.org/ComputationalWorkflow#output">[?]</a></th>
             <td style='text-align:left'><a href="#%23ST610109.cwl-%3EDT6113">DT6113</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> ListenerEQ</h3>
-                
-                
-                
-                
-        <div id="SS6102">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>SS6102</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>ListenerEQ</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>SoftwareSourceCode</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Listens for new EQ parameter message and conveys it to the EnsembleManager #b05#. Optional processing/conversion of data (under discussion: to be compliant with the operational version in the monitoring room)</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> ListenerGNSS</h3>
-                
-                
-                
-                
-        <div id="SS6104">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>SS6104</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>ListenerGNSS</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>SoftwareSourceCode</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Listens for new data packet(s) from GNSS processing system and conveys it/them to the EnsembleManager #b05# and to the MisfitEvaluator #b07#.  (under discussion: to be compliant with bthe operational version in the monitoring room)</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> Misfit Evaluator</h3>
-                
-                
-                
-                
-        <div id="SS6113">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>SS6113</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Misfit Evaluator</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>SoftwareSourceCode</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>TODO</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
-            <td style='text-align:left'><a href="#0000-0001-9836-8716">Jörn Behrens</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
-            <td style='text-align:left'><span>TBD (probably GPL-3.0-or-later)</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
-            <td style='text-align:left'><span>Python</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3> Earthquake modeling</h3>
-                
-                
-                
-                
-        <div id="SS6118">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>SS6118</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Earthquake modeling</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>SoftwareSourceCode</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>This block is considered as an alternative or accompaniment to WP7 in providing advanced source parameters to DTC-T1. E.g., shakemaps for landslide simulations. (to be developed, under discussion)</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">url<span>&nbsp;</span><a href="http://schema.org/url">[?]</a></th>
-            <td style='text-align:left'><span>TODO: add the url to the software definition from the EPOS APIs</span></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-            </div>
-        <hr/><br/><br/>
-            <div>
-                <h3><a href="ST610106.cwl">⬇️ Download: </a> Scenario Modeling</h3>
-                
-                
-                
-                
-        <div id="ST610106.cwl">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>ST610106.cwl</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>Scenario Modeling</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><ul>
-                        <li><span>File</span></li>
-                        
-                        <li><span>SoftwareSourceCode</span></li>
-                        
-                        <li><span>ComputationalWorkflow</span></li>
-                        </ul></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
-            <td style='text-align:left'>TODO</td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'>TODO</td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
-            <td style='text-align:left'><a href="https://about.workflowhub.eu/Workflow-RO-Crate/#cwl">https://about.workflowhub.eu/Workflow-RO-Crate/#cwl</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">input<span>&nbsp;</span><a href="https://bioschemas.org/ComputationalWorkflow#input">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#%23DT6109-%3EST610106.cwl">DT6109</a></li>
-                        
-                        <li><a href="#%23DT6102-%3EST610106.cwl">DT6102</a></li>
-                        
-                        <li><a href="#%23DT6106-%3EST610106.cwl">DT6106</a></li>
-                        
-                        <li><a href="#%23DT6108-%3EST610106.cwl">DT6108</a></li>
-                        </ul></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">output<span>&nbsp;</span><a href="https://bioschemas.org/ComputationalWorkflow#output">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#%23ST610106.cwl-%3EDT6110">DT6110</a></li>
-                        
-                        <li><a href="#%23ST610106.cwl-%3EDT6111">DT6111</a></li>
-                        </ul></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#./">Probabilistic Tsunami Forecasting</a></td>

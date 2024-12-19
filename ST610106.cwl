@@ -118,8 +118,8 @@ steps:
     doc: Source-to-wave filter
     in:
       dynamic deformation: SS6106/dynamic deformation
-      dynamic landslide deformation 1: SS6109/dynamic landslide deformation
-      dynamic landslide deformation 2: SS6110/dynamic landslide deformation
+      dynamic landslide deformation 1: SS6109/dynamic landslide deformation 1
+      dynamic landslide deformation 2: SS6110/dynamic landslide deformation 2
     run:
       class: Operation
       inputs:

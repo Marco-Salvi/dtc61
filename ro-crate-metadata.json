@@ -628,7 +628,7 @@
       "@id": "SS6101",
       "@type": "SoftwareSourceCode",
       "name": "ScPlayer: Scenario Player",
-      "description": "Simulates real-time processing by sending to the workflow pre-stored sensor data packets from the scenario library database. Each data packet will be sent at a corresponding scenario model time to simulate the real-time hazard event occurrence and processing (under development)",
+      "description": "Simulates real-time processing by sending to the workflow pre-stored sensor data packets, extracted from the input data DT6103, DT6104, and DT6105 and collected into the scenario library database. Each data packet will be sent at different time to simulate the real-time hazard event occurrence and processing (under development)",
       "url": "TODO: add the url to the software definition from the EPOS APIs"
     },
     {

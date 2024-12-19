@@ -2,7 +2,7 @@ name: RO-Crate to GitHub Pages
 on:
   push:
     branches:
-      - main
+      # - main
 jobs:
   build-and-deploy:
     environment: github-pages

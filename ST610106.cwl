@@ -8,19 +8,22 @@ inputs:
     doc: NEAMTHM18
     type: Directory
   DT6106:
+    doc: list of earthquake scenarios
     type: Directory
   DT6108:
+    doc: list of landslide scenarios
     type: Directory
   DT6109:
+    doc: topo-bathymetric grids
     type: Directory
 
 outputs:
   DT6110:
-    doc: Tsunami_intensity -> SS6108 oppure SS6107
+    doc: Tsunami intensities
     type: Directory
     outputSource: SS6107/DT6110
   DT6111:
-    doc: può essere generato da -> SS6106 oppure SS6107 oppure SS6108
+    doc: Ground deformation
     type: Directory
     outputSource: SS6107/DT6111
 
@@ -36,24 +39,31 @@ steps:
         DT6106: Directory
         DT6109: Directory
       outputs:
-        deformation: Directory
+        dynamic rupture: Directory
     out:
-    - deformation
+    - dynamic rupture
   SS6107:
+    doc: Tsunami-HySEA
     in:
       DT6106: DT6106
       DT6109: DT6109
+      dynamic deformation: SS6112/dynamic deformation
+      dynamic landslide deformation: SS6112/dynamic landslide deformation
     run:
       class: Operation
       inputs:
         DT6106: Directory
         DT6109: Directory
+        dynamic deformation: Directory
+        dynamic landslide deformation: Directory
       outputs:
         DT6110: Directory
         DT6111: Directory
+        offshore time series: Directory
     out:
     - DT6110
     - DT6111
+    - offshore time series
   SS6108:
     doc: Landslide-HySEA
     in:
@@ -65,9 +75,9 @@ steps:
         DT6108: Directory
         DT6109: Directory
       outputs:
-        DT6110: Directory
+        dynamic landslide deformation: Directory
     out:
-    - DT6110
+    - dynamic landslide deformation
   SS6109:
     doc: BingClaw
     in:
@@ -79,9 +89,9 @@ steps:
         DT6108: Directory
         DT6109: Directory
       outputs:
-        tbd: Directory
+        dynamic landslide deformation: Directory
     out:
-    - tbd
+    - dynamic landslide deformation
   SS6110:
     doc: SHALTOP
     in:
@@ -93,44 +103,43 @@ steps:
         DT6108: Directory
         DT6109: Directory
       outputs:
-        tbd_2: Directory
+        dynamic landslide deformation: Directory
     out:
-    - tbd_2
+    - dynamic landslide deformation
   SS6111:
-    doc: InundationAI DT6110 può essere generato da -> SS6106 oppure SS6107 oppure
-      SS6108
+    doc: InundationAI
     in:
-      DT6110: SS6107/DT6110
+      offshore time series: SS6107/offshore time series
     run:
       class: Operation
       inputs:
-        DT6110: Directory
+        offshore time series: Directory
       outputs:
-        DT6110: Directory
+        2D inundation pattern: Directory
     out:
-    - DT6110
+    - 2D inundation pattern
   SS6112:
     doc: Source-to-wave filter
     in:
-      deformation: SS6106/deformation
-      tbd: SS6109/tbd
-      tbd_2: SS6110/tbd_2
+      dynamic landslide deformation 1: SS6109/dynamic landslide deformation
+      dynamic landslide deformation 2: SS6108/dynamic landslide deformation
+      dynamic landslide deformation 3: SS6110/dynamic landslide deformation
+      dynamic rupture: SS6106/dynamic rupture
     run:
       class: Operation
       inputs:
-        deformation: Directory
-        tbd: Directory
-        tbd_2: Directory
+        dynamic landslide deformation 1: Directory
+        dynamic landslide deformation 2: Directory
+        dynamic landslide deformation 3: Directory
+        dynamic rupture: Directory
       outputs:
-        deformation: Directory
-        tbd: Directory
-        tbd_2: Directory
+        dynamic deformation: Directory
+        dynamic landslide deformation: Directory
     out:
-    - deformation
-    - tbd
-    - tbd_2
-  SS6113:
-    doc: Precomputed simulation
+    - dynamic deformation
+    - dynamic landslide deformation
+  SS6119:
+    doc: Retrieving of precomputed simulations
     in:
       DT6102: DT6102
     run:

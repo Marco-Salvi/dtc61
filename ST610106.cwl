@@ -39,19 +39,23 @@ steps:
         DT6106: Directory
         DT6109: Directory
       outputs:
-        dynamic deformation: Directory
+        dynamic rupture: Directory
     out:
-    - dynamic deformation
+    - dynamic rupture
   SS6107:
     doc: Tsunami-HySEA
     in:
       DT6106: DT6106
       DT6109: DT6109
+      dynamic deformation: SS6112/dynamic deformation
+      dynamic landslide deformation: SS6112/dynamic landslide deformation
     run:
       class: Operation
       inputs:
         DT6106: Directory
         DT6109: Directory
+        dynamic deformation: Directory
+        dynamic landslide deformation: Directory
       outputs:
         DT6110: Directory
         DT6111: Directory
@@ -85,9 +89,9 @@ steps:
         DT6108: Directory
         DT6109: Directory
       outputs:
-        dynamic landslide deformation 1: Directory
+        dynamic landslide deformation: Directory
     out:
-    - dynamic landslide deformation 1
+    - dynamic landslide deformation
   SS6110:
     doc: SHALTOP
     in:
@@ -99,17 +103,17 @@ steps:
         DT6108: Directory
         DT6109: Directory
       outputs:
-        dynamic landslide deformation 2: Directory
+        dynamic landslide deformation: Directory
     out:
-    - dynamic landslide deformation 2
+    - dynamic landslide deformation
   SS6111:
-    doc: InundationAI 
+    doc: InundationAI
     in:
       offshore time series: SS6107/offshore time series
     run:
       class: Operation
       inputs:
-         offshore time series: Directory
+        offshore time series: Directory
       outputs:
         2D inundation pattern: Directory
     out:
@@ -117,15 +121,17 @@ steps:
   SS6112:
     doc: Source-to-wave filter
     in:
-      dynamic deformation: SS6106/dynamic deformation
-      dynamic landslide deformation 1: SS6109/dynamic landslide deformation 1
-      dynamic landslide deformation 2: SS6110/dynamic landslide deformation 2
+      dynamic landslide deformation 1: SS6109/dynamic landslide deformation
+      dynamic landslide deformation 2: SS6108/dynamic landslide deformation
+      dynamic landslide deformation 3: SS6110/dynamic landslide deformation
+      dynamic rupture: SS6106/dynamic rupture
     run:
       class: Operation
       inputs:
-        dynamic deformation: Directory
         dynamic landslide deformation 1: Directory
         dynamic landslide deformation 2: Directory
+        dynamic landslide deformation 3: Directory
+        dynamic rupture: Directory
       outputs:
         dynamic deformation: Directory
         dynamic landslide deformation: Directory

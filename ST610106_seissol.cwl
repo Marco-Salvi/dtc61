@@ -36,6 +36,18 @@ steps:
         dynamic rupture: Directory
     out:
     - dynamic rupture
+  SS6112:
+    doc: Source-to-wave filter
+    in:
+      dynamic rupture: SS6106/dynamic rupture
+    run:
+      class: Operation
+      inputs:
+        dynamic rupture: Directory
+      outputs:
+        dynamic deformation: Directory
+    out:
+    - dynamic deformation
   SS6107:
     doc: Tsunami-HySEA
     in:
@@ -56,15 +68,3 @@ steps:
     - DT6110
     - DT6111
     - offshore time series
-  SS6112:
-    doc: Source-to-wave filter
-    in:
-      dynamic rupture: SS6106/dynamic rupture
-    run:
-      class: Operation
-      inputs:
-        dynamic rupture: Directory
-      outputs:
-        dynamic deformation: Directory
-    out:
-    - dynamic deformation

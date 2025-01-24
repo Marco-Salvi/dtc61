@@ -33,33 +33,33 @@ steps:
         DT6106: Directory
         DT6109: Directory
       outputs:
-        dynamic rupture: Directory
+        dynamic-rupture: Directory
     out:
-    - dynamic rupture
+    - dynamic-rupture
   SS6112:
     doc: Source-to-wave filter
     in:
-      dynamic rupture: SS6106/dynamic rupture
+      dynamic-rupture: SS6106/dynamic-rupture
     run:
       class: Operation
       inputs:
-        dynamic rupture: Directory
+        dynamic-rupture: Directory
       outputs:
-        dynamic deformation: Directory
+        dynamic-deformation: Directory
     out:
-    - dynamic deformation
+    - dynamic-deformation
   SS6107:
     doc: Tsunami-HySEA
     in:
       DT6106: DT6106
       DT6109: DT6109
-      dynamic deformation: SS6112/dynamic deformation
+      dynamic-deformation: SS6112/dynamic-deformation
     run:
       class: Operation
       inputs:
         DT6106: Directory
         DT6109: Directory
-        dynamic deformation: Directory
+        dynamic-deformation: Directory
       outputs:
         DT6110: Directory
         DT6111: Directory

@@ -1,39 +1,39 @@
-#!/usr/bin/env cwl-runner
+#!/usr/bin/env cwltool
 
 cwlVersion: v1.2
 class: Workflow
 
 inputs:
-  DT6102:
-    doc: NEAMTHM18
-    type: Directory
-  DT6106:
-    doc: list of earthquake scenarios
-    type: Directory
-  DT6109:
-    doc: topo-bathymetric grids
-    type: Directory
+  job: File
 
 outputs:
-  DT6110:
-    doc: Tsunami intensities
-    type: Directory
-    outputSource: SS6107/DT6110
+  out:
+    type: File?
+    outputSource: slurm/out
+  err:
+    type: File?
+    outputSource: slurm/err
 
 steps:
-  SS6107:
-    doc: Tsunami-HySEA
+  slurm:
     in:
-      DT6106: DT6106
-      DT6109: DT6109
+      job: job
     run:
-      class: Operation
+      class: CommandLineTool
+
       inputs:
-        DT6106: Directory
-        DT6109: Directory
+        job:
+          type: File
+          inputBinding:
+            position: 1
+      baseCommand: sh
       outputs:
-        DT6110: Directory
-        offshore time series: Directory
-    out:
-    - DT6110
-    - offshore time series
+        out:
+          type: File?
+          outputBinding:
+            glob: 'cwl.out'
+        err:
+          type: File?
+          outputBinding:
+            glob: '*.err'
+    out: [out, err]

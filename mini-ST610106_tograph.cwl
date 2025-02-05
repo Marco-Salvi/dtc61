@@ -6,18 +6,18 @@ class: Workflow
 inputs:
   DT6102:
     doc: NEAMTHM18
-    type: Directory?
+    type: Directory
   DT6106:
     doc: list of earthquake scenarios
-    type: Directory?
+    type: Directory
   DT6109:
     doc: topo-bathymetric grids
-    type: Directory?
+    type: Directory
 
-outputs: []
+outputs:
   DT6110:
     doc: Tsunami intensities
-    type: Directory?
+    type: Directory
     outputSource: SS6107/DT6110
 
 steps:
@@ -30,10 +30,10 @@ steps:
     run:
       class: Operation
       inputs:
-      DT6102: DT6102
-        DT6106: Directory?
-        DT6109: Directory?
-      outputs: []
-        DT6110: Directory?
-    out: []
+        DT6102: Directory
+        DT6106: Directory
+        DT6109: Directory
+      outputs:
+        DT6110: Directory
+    out:
     - DT6110
